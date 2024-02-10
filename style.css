@@ -1,0 +1,768 @@
+/* VARIABLES */
+:root{
+    --p_white: #fff;
+    --p_black: #121215;
+    --s_white: #7e7e7e;
+
+}
+
+/* FONTS */
+@font-face {
+    font-family: avone;
+    src: url(Assets/Fonts/AVONE.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: louis;
+    src:url(Assets/Fonts/Louis\ George\ Cafe.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: autograph;
+    src: url(Assets/Fonts/Autography.otf) format(opentype);
+}
+
+@font-face {
+    font-family: broad;
+    src: url(Assets/Fonts/BROADW.TTF) format(truetype);
+}
+
+@font-face {
+    font-family: tommy;
+    src: url(Assets/Fonts/MADE\ TOMMY\ Medium_PERSONAL\ USE.otf) format(opentype);
+}
+
+@font-face {
+    font-family: lemon_m;
+    src: url(Assets/Fonts/LEMONMILK-Medium.otf) format(opentype);
+}
+
+@font-face {
+    font-family: trinco;
+    src: url(Assets/Fonts/Trinco\ Normal\ Plain.ttf) format(truetype);
+}
+ 
+
+/* HTML RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* min-height: 180vh; */
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;    
+    font-family: louis,sans-serif;
+    text-align: center;
+    color: var(--p_white);
+    background-color: var(--p_black);
+    /* overflow-y: hidden; */
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: var(--p_white);
+}
+
+a:hover{
+    font-weight: 900;
+}
+
+/* END HTML RESET */
+
+
+/* UTILITY CLASSES  */
+
+.nodec{
+    font-family: louis,sans-serif;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.width{
+    width: min(85vw,1000px);
+}
+
+/* END UTILITY CLASSES */
+
+
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar{
+    /* width:10px;
+    height: 0px; */
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--p_black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #111111;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #222222;
+}
+
+::-webkit-scrollbar-corner{
+    background: var(--p_black);
+}
+
+/* END SCROLLBAR */
+
+
+
+
+
+
+/* ---------------------- */
+
+
+
+
+
+/* HEADER  */
+.header{
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px; 
+    z-index: 2;
+    /* border: 3px solid black; */
+    background-color: var(--p_black);
+
+}
+
+.title{
+    padding:1rem;
+    letter-spacing: 1.5px;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    text-wrap: nowrap;
+}
+
+.menu-button{
+    display: none;
+}
+
+
+/* navBar */
+.nav {
+    list-style: none;   
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;  
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+
+.nav a{
+    padding: .3rem;
+}
+
+/* END HEADER */
+
+
+/* HERO SECTION  */
+
+.bg-hero{
+    width: 100%;
+    height:auto;
+    opacity: .6;
+}
+
+.mob-bg-hero{
+    display: none;
+}
+
+.hero{
+    color: var(--p_white);
+    width: 100%;
+    background-color: var(--p_black);
+    position: relative;
+    background-color: black;
+    
+
+    /* border: 2px solid red; */
+}
+
+.hero-name-block{
+    min-width: 60vw;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: baseline;
+    padding: 1rem 6.7%;
+    font-family: avone,'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 12vw;
+    
+
+    /* border:2px solid white; */
+}
+
+.hero-name-block h2{
+    font-size: 8vw;
+    font-weight: 200;
+    text-wrap: nowrap;
+
+    /* border:2px solid white; */
+}
+
+.hero-name-block p{
+    font-size: 3.5vw;
+    font-weight: 200;
+
+    /* border:2px solid white; */
+}
+
+.hero-img{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    bottom: 0vw;
+    right: 13vw;
+}
+
+.mob-hero-img{
+    display: none;
+}
+
+.hero-name-block .hero-desc{
+    font-size: 2.5vw;
+    text-wrap: nowrap;
+    letter-spacing: 1px;
+    font-family: autograph, Georgia, 'Times New Roman';
+    
+    /* border:2px solid white; */
+}
+
+.watermark{
+    font-family: broad, 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    position: absolute;
+    bottom: 5vw;
+    right: 10vw;
+    font-size:2.6vw;
+    opacity: 0.15;
+}
+
+
+/* WHO AM I */
+.who{
+    position:relative;
+    width: 100%;
+}
+
+.who-bg{
+    width: 100%;
+    height: auto;
+    opacity: .25;
+
+    /* border: 2px solid red; */
+
+}
+
+.who h2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 50%;
+    font-size: 3vw;
+}
+
+.pellets{
+    position:absolute;
+    transform: translate(-50%, 0%);
+    top: 22.5%;
+    left: 50%;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    /* border: 2px solid red; */
+}
+
+.pellets ul{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: .87vw 0rem;
+    gap: 2.3vw;
+    
+
+    /* border:2px solid rgb(0, 255, 200); */
+}
+
+.pellets li{
+    font-size: 2vw;
+    padding: .9vw 1.5vw;
+    font-weight: 600;
+    letter-spacing: .7px;
+    background-color: var(--p_white);
+    border-radius: 5px;
+
+    /* border:2px solid red; */
+}
+
+.pellets li:hover{
+    transform: scale(110%);
+    transition-timing-function: ease-out;
+    transition-duration: 120ms;
+}
+
+.pellets a{
+    color: var(--p_black);
+}
+
+.pellets a:hover{
+    color: var(--s_white);
+}
+
+
+/* QUOTE */
+.quote{
+    width: 100%;
+    padding: 2rem 3rem;
+    background-color: var(--p_white);
+    display: flex;
+    justify-content: center;
+
+
+    /* border: 2px solid red; */
+
+}
+
+.quote-container{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1.6rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--p_black);
+    border-radius: 1rem;
+    width: min(85vw,1000px);
+
+    /* border: 2px solid rgb(0, 255, 4); */
+}
+
+#quote-article{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+
+    /* border: 2px solid rgb(0, 47, 255); */
+}
+
+.quote-deco{
+    width: 7px;
+    height: 85px;
+    background-color: var(--p_white);
+
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+
+.quote quote{
+    font-family: tommy;
+    font-size: 1.5rem;
+    text-align: left;
+    padding-left: 1rem;
+    line-height: 2rem;
+    letter-spacing: 1.3px;
+
+}
+
+.ajla-logo {
+    width: min(10vw,60px);
+    height: auto;
+    margin: 1.5rem;
+    padding: .4rem;
+    opacity: .6;
+}
+
+
+
+/* EDUCATION */
+
+.education{
+    background-color: var(--p_white);
+    color: var(--p_black);
+    width: 100%;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+}
+
+#edu{
+    text-align:left;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 1rem ;
+    font-family: lemon_m;
+    letter-spacing: 1.2px;
+
+    /* border: 2px solid; */
+
+}
+
+.education a{
+    color: var(--p_black);
+}
+
+.all-e{
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 3rem;
+    justify-items: baseline;
+    /* border: 2px solid; */
+}
+
+.card{
+    padding: 1rem 0rem;
+    display: flex;
+
+    /* border: 2px solid; */
+
+}
+
+.edu-dec{
+    height: 100%;
+    width: 7px;
+    background-color: black;    
+
+}
+
+.info  {
+    padding: 0rem 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.edu-head  {
+    font-size: 1.7rem;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+
+}
+
+.edu-sub{
+    font-size: 1.2rem;
+    font-weight: 800;
+
+}
+
+.edu-desc{
+    padding-top: .2rem;
+}
+
+
+/* FOOTER */
+.contact{
+    color: var(--p_white);
+    text-align: left;   
+
+    /* border: 2px solid white; */
+    
+}
+
+footer h2{
+    font-family: lemon_m;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1.5rem 0rem 1rem 0rem ;
+
+    /* border: 2px solid white; */
+}
+
+.wrapper{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+
+    /* border: 2px solid white; */
+}
+
+.wrapper quote{
+    font-family: trinco;
+    padding: 1rem;
+    font-size: 1.2rem;
+    
+
+    /* border: 2px solid white; */
+}
+
+.con-card  {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    padding: .3rem;
+    align-items: center;
+}
+
+.con-card i{
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+
+
+/* -------------------- */
+
+
+/* MEDIA QUOERIES */
+/* PHONE */
+
+@media screen and (max-width: 640px) {
+    
+    /* HEADER */
+    .header{
+        display: block;
+        position: sticky;
+        top: 0px;
+    }
+
+    .title{
+        text-wrap:balance;
+    }
+
+    .mob-header{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-top: .6rem;
+        padding-bottom: .6rem;
+        padding-right: .5rem;
+        
+
+        /* border: 2px solid white; */
+    }
+
+    .menu-button{
+        padding-left: 10px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        background-color: transparent;
+        border: none;
+        color: var(--p_white);
+
+    }
+
+    .menu-button i{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+
+    
+    .nav{
+        position: fixed;
+        top: 0%;
+        display: block;
+        width: 100%;
+        background-color: var(--p_black);
+        z-index: -1;
+        /* padding: 1rem; */
+        height: 0;
+        text-align: center;
+        
+        
+        transition: .5s;
+        
+        transform-origin: top center;
+
+        /* border: 2px solid white; */
+    }
+
+
+    
+    .nav a{
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin: 3.2rem;
+        padding: 2rem; 
+        display: none; 
+        animation: navopen .6s ease ;
+
+
+        /* border: 2px solid white; */
+    }
+
+
+    @keyframes navopen {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+        
+    }
+
+
+
+    .header nav a:focus, .header nav a:hover{
+        font-weight: 900;
+    }
+
+    #nav-ele1{
+        margin-top: 7rem;
+    }
+
+
+    /* HERO */
+
+    .bg-hero{
+        display: none;
+    }
+
+    .mob-bg-hero{
+        display:block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        opacity: .6;
+    }
+
+    .hero-img{
+        display: none;
+    }
+
+    .mob-hero-img{
+        display: block;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+    }
+
+    .hero-name-block{
+        min-width: 50vw;
+        justify-content: end;
+        position: absolute;
+        bottom: 5%;
+        top: 50%;
+
+
+        /* border: 2px solid white; */
+    }
+
+    .hero-name-block h2{
+        text-wrap: balance;
+        font-size: 13vw;
+        letter-spacing: 4px;
+        text-align: left;
+        line-height: 13.5vw;
+        font-weight: 700;
+        padding-bottom: .7rem;
+
+    }
+
+    .hero-name-block .hero-desc{
+        z-index: 1;
+        font-size: 1rem;
+    }
+
+    .watermark{
+        bottom: 95%;
+        font-size: 4vw;
+    }
+
+
+    /* WHO AM I */
+    .who{
+        position: static;
+        background-color: var(--p_black);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        /* border: 2px solid red; */
+    }
+    .who-bg{
+        display: none;
+    }
+
+    .who h2{
+        position: static;
+        transform: translate(0,0);
+        padding-top: 1.3rem;
+        font-size: 1.7rem;
+    }
+
+    .pellets{
+        position:static;
+        transform: translate(0,0);
+        width: auto;
+        height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        gap:auto;
+    }
+
+    .pellets ul{
+        width: auto;
+        flex-flow: column nowrap;
+        gap: auto;
+    }
+    
+    .pellets li{
+        font-size: 1.3rem;
+        padding: .6rem 1rem;
+    }
+
+    /* QUOTE */
+
+    .quote quote{
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    /* EDUCATION */
+
+    .all-e{
+        grid-template-columns: auto;
+        gap: 1.5rem;
+    }
+
+    /* FOOTER */
+    .wrapper{
+        flex-flow: column nowrap;
+    }
+
+    .wrapper quote{
+        padding-top: 2rem;
+    }
+
+
+}
