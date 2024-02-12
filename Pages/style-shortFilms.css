@@ -96,7 +96,7 @@ a:hover{
 }
 
 .bold{
-    font-weight: 800;
+    font-weight: 900;
 }
 
 .italic-louis{
@@ -108,8 +108,11 @@ a:hover{
 }
 
 .opacity{
-    opacity: .75;
+    opacity: .63;
+    /* font-size: .7rem; */
 }
+
+
 
 /* END UTILITY CLASSES */
 
@@ -245,6 +248,9 @@ video{
     left: 0; */
     z-index: 0;    
     opacity: .65;
+    display: block;
+
+    /* border: 2px solid red; */
     
 }
 
@@ -269,16 +275,19 @@ video{
 
 .hero h2{
     font-family: louis;
+    font-size: 1.5rem;
     letter-spacing: 1.5px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+
 .hero-name{
     font-size: 2rem;
+    padding-top: .2rem;
     font-family: avone;
     letter-spacing: 1.5px;
     font-weight: 400;
-    text-shadow: 3px 5px 5px rgba(0, 0, 0, .6);
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, .3);
     animation: 5s steps(1) 1s title-anim ;
 }
 
