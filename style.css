@@ -670,7 +670,7 @@ footer h2{
         justify-content: end;
         position: absolute;
         bottom: 5%;
-        top: 50%;
+        top: auto;
 
 
         /* border: 2px solid white; */
@@ -687,9 +687,17 @@ footer h2{
 
     }
 
+    .hero-name-block p{
+        font-size: 6vw;
+        font-weight: 200;
+        opacity: .7;
+    
+        /* border:2px solid white; */
+    }
+
     .hero-name-block .hero-desc{
         z-index: 1;
-        font-size: 1rem;
+        font-size: 4vw;
     }
 
     .watermark{
