@@ -663,6 +663,8 @@ footer h2{
         position: absolute;
         bottom: 0%;
         right: 0%;
+        width: 60%; 
+        height: auto;
     }
 
     .hero-name-block{
