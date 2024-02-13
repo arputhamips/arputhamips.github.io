@@ -455,6 +455,9 @@ video{
     display: grid;
     gap: 2rem;
     margin: auto;
+
+    /* border:2px solid black; */
+
 }
 
 .card{
