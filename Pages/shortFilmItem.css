@@ -106,6 +106,7 @@ a:hover{
 
 .width{
     width: min(85vw,1000px);
+    margin:auto;
 }
 
 .opacity{
@@ -318,7 +319,7 @@ a:hover{
 .main-img{
     width: 100%;
     position: relative;
-    /* padding-inline: 2rem; */
+    padding-inline: 2rem;
 
     /* border:2px solid white; */
 }
@@ -348,14 +349,14 @@ a:hover{
     color: var(--p_black);
     padding-block: 2rem;
 
-    /* border: 2px solid white; */
+    /* border: 2px solid blue; */
 }
 
 .title-block{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 3rem;
+    padding-inline: 7vw;
     
 
     /* border:2px solid red; */
@@ -379,17 +380,17 @@ a:hover{
 }
 
 .title-block h2{
-    font-size: 2.5rem;
+    font-size: 8vw;
     letter-spacing: 1.5px;
     font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: min(2vw,1.5rem);
     
 }
 
 .title-block h2 span{
-    font-size: 1.2rem;
+    font-size: 4.5vw;
     font-family: louis_i;
     font-weight: 300;
     letter-spacing: 0px;
@@ -398,8 +399,8 @@ a:hover{
 }
 
 .mt{
-    width: 6rem;
-    height:6rem;
+    width: 16vw;
+    height:16vw;
     display: flex;
     place-content: center;
     position: relative;
@@ -426,44 +427,59 @@ a:hover{
 /* TEASER VIDEO PLAYER */
 
 .teaser{
-    padding: 2rem;
+    padding: min(5rem,8vw);
+
+    /* border: 2px solid red; */
 }
 
-/* .vid-player{
+.vid-player{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+
     
-} */
+    /* border: 2px solid blue; */
+}
 
 .vid-player iframe{
+    position: absolute;
+    inset: 0 0 0 0 ;
     width: 100%;
+    height: 100%;
 
     /* border: 2px solid green; */
     
 }
 
 .buttons{
-    padding: 1rem;
+    padding: min(8vw,2.5rem);
     display: flex;
-    justify-content: space-between;
+    flex-flow: column nowrap;
+    gap: 6vw;
+    justify-content: center;
     width: 100%;
 
 }
 
 .teaser button{
-    padding: 1rem;
-    padding-inline: 1.4rem;
+    padding: 5vw;
     border: none;
     background-color: var(--red);
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: min(5vw,2rem);
     font-family: tommy;
     color: var(--sec_white);
     transition: .3s ease-out;
-
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
 }
 
 .teaser button i{
-    padding-right: .5rem;
+    padding-right: 1rem;
+    display: block;
 }
 
 .teaser button:hover{
@@ -517,8 +533,10 @@ a:hover{
 .info{
     background-color: var(--p_white);
     color: var(--sec_white);
-    padding: 1rem;
+    padding: min(2rem,12vw);
     display: flex;
+    flex-flow: column nowrap;
+    gap: min(2rem,6vw);
     justify-content: space-evenly;
 
 
@@ -527,14 +545,16 @@ a:hover{
 }
 
 .credits{
-    padding: 1.5rem 2.5rem;
+    padding: 1.5rem;
     text-align: center;
-    line-height: 2rem;
+    display: grid;
+    place-content: center;
+    line-height: 7vw;
     border-radius: 10px;
     font-family: louis;
     font-weight: 600;
     letter-spacing: 1.2px;
-    font-size: 1.2rem;
+    font-size: min(1.2rem,3.5vw);
     background-color: var(--p_black);
     box-shadow: 5px 5px var(--sec_white);
 
@@ -543,16 +563,15 @@ a:hover{
 }
 
 .my-credits{
-    padding: .5rem;
+    /* padding: .5rem; */
     font-family: louis_i;
-    font-size: 1rem;
+    font-size: min(1rem,4vw);
 
     /* border: 2px solid red; */
 }
 
 .budget{
     padding: 1.5rem;
-    padding-inline: 3rem;
     background-color: var(--p_black);
     border-radius: 10px;
     box-shadow: 5px 5px var(--sec_white);
@@ -566,14 +585,14 @@ a:hover{
 }
 
 .budget i{
-    font-size: 4rem;
+    font-size: min(5rem,15vw);
     
 }
 
 .budget p{
     padding-top: 1rem;
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: min(2rem,10vw);
+    font-weight: 900;
 }
 
 
