@@ -4,6 +4,7 @@
     --p_black: #121215;
     --s_white: #7e7e7e;
     --sec_white: #dfdfdf;
+    --red: #f38486;
 
 }
 
@@ -25,27 +26,27 @@
 
 @font-face {
     font-family: autograph;
-    src: url(Assets/Fonts/Autography.otf) format(opentype);
+    src: url(/Assets/Fonts/Autography.otf) format(opentype);
 }
 
 @font-face {
     font-family: broad;
-    src: url(Assets/Fonts/BROADW.TTF) format(truetype);
+    src: url(/Assets/Fonts/BROADW.TTF) format(truetype);
 }
 
 @font-face {
     font-family: tommy;
-    src: url(Assets/Fonts/MADE\ TOMMY\ Medium_PERSONAL\ USE.otf) format(opentype);
+    src: url(/Assets/Fonts/MADE\ TOMMY\ Medium_PERSONAL\ USE.otf) format(opentype);
 }
 
 @font-face {
     font-family: lemon_m;
-    src: url(Assets/Fonts/LEMONMILK-Medium.otf) format(opentype);
+    src: url(/Assets/Fonts/LEMONMILK-Medium.otf) format(opentype);
 }
 
 @font-face {
     font-family: trinco;
-    src: url(Assets/Fonts/Trinco\ Normal\ Plain.ttf) format(truetype);
+    src: url(/Assets/Fonts/Trinco\ Normal\ Plain.ttf) format(truetype);
 }
  
 
@@ -70,7 +71,7 @@ body{
     /* text-align: center; */
     color: var(--p_white);
     background-color: var(--p_black);
-    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
 }
 
 img{
@@ -167,7 +168,10 @@ a:hover{
     width: 100%;
     padding-top: .6rem;
     padding-bottom: .6rem;
-    padding-right: .5rem;
+    padding-right: 1rem;
+    
+
+    /* border: 2px solid white; */
     
 }
 
@@ -187,6 +191,9 @@ a:hover{
 .menu-button i{
     font-size: 1.3rem;
     text-align: center;
+    padding: 1rem;
+
+    /* border:2px solid white; */
 }
 
 
@@ -265,8 +272,8 @@ video{
 
 .hero-card{
     position: absolute;
-    top: 42%;
-    margin-left: 10vw;
+    bottom: 8%;
+    margin-left: 10%;
     padding: .5rem;
 
 
@@ -275,14 +282,14 @@ video{
 
 .hero h2{
     font-family: louis;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     letter-spacing: 1.5px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
 .hero-name{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding-top: .2rem;
     font-family: avone;
     letter-spacing: 1.5px;
@@ -314,12 +321,34 @@ video{
 /* END HERO */
 
 
-
 /* GALLERY */
+
+.gallery-head{
+    display: flex;
+    margin-bottom: .8rem;
+
+    /* border:2px solid black; */
+}
+
+.gallery-head .deco{
+    height: 100%;
+    width: 10px;
+    background-color: var(--p_black);
+}
+
+.gallery h2{
+    color: var(--p_black);
+    font-family: tommy;
+    font-size: 1.6rem;
+    font-weight: 100;
+    padding-inline: .65rem;
+    padding-block: .2rem;
+}
 
 .gallery{
     background-color: var(--p_white);
     padding: 2.4rem;
+    padding-top: 2.6rem;
     display: grid;
     gap: 2rem;
 }
@@ -404,3 +433,116 @@ video{
 }
 
 /* GALLERY END */
+
+/* YOUTUBE */
+
+.yt{
+    padding-block: 1rem;
+    background-color: var(--p_white);
+
+
+    
+    border:2px solid white;
+}
+
+.yt article{
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+
+
+    /* border:2px solid white; */
+}
+
+.yt article p{
+    padding-block: 1rem;
+    text-align: left;
+    color: var(--s_white);
+    font-size: 1.16rem;
+    font-weight: 600;
+
+
+    /* border: 2px solid black; */
+}
+
+.yt article div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red);
+    border-radius: .25rem;
+    padding: 1rem;
+    transition: .3s;
+}
+
+.yt article div i{
+    padding: .5rem;
+    margin-right: .5rem;
+    font-size: 2rem;
+}
+
+.yt article div:hover{
+    transform: translateY(-5px);
+    text-shadow: 3px 3px var(--s_white);
+    box-shadow: 5px 7px var(--sec_white);
+}
+
+    
+
+
+
+/* FOOTER */
+.contact{
+    color: var(--p_white);
+    text-align: left;
+    margin: auto;
+    /* padding: 1rem; */
+
+
+    
+    
+    /* border: 2px solid white; */
+    
+}
+
+footer h2{
+    font-family: lemon_m;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1.5rem 0rem 1rem 0rem ;
+
+    /* border: 2px solid white; */
+}
+
+.wrapper{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    flex-flow: column nowrap;
+
+    /* border: 2px solid white; */
+}
+
+.wrapper quote{
+    font-family: trinco;
+    padding: 1rem;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    
+
+    /* border: 2px solid white; */
+}
+
+.con-card  {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    padding: .3rem;
+    align-items: center;
+}
+
+.con-card i{
+    padding: .5rem;
+    font-size: 1.2rem;
+}
