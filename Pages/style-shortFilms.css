@@ -154,10 +154,13 @@ a:hover{
 
 .title{
     padding:1rem;
+    padding-block: 1.1rem;
     letter-spacing: 1.5px;
     margin-left: 1rem;
     font-size: 1.2rem;
     text-wrap: balance;
+
+    /* border: 2px solid white; */
 }
 
 .mob-header{
@@ -242,11 +245,76 @@ a:hover{
     margin-top: 7rem;
 }
 
+
+@media screen and (min-width:560px) {
+
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: fit-content;
+        padding: 0;
+
+        /* border: 2px solid white; */
+
+    }
+
+    .mob-header{
+        /* border: 2px solid white; */
+        padding: 0;
+        width: auto;
+    }
+
+    .menu-button{
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+        gap: 0;
+        height: auto;
+        z-index: 1;
+        background-color: transparent;
+        padding: 0;
+               
+        width: auto;
+        position: static;
+        justify-content: end;
+
+        /* border: 2px solid white; */
+    }
+
+    .nav a{
+        display: block;
+        font-size: 1rem;
+        padding: 1rem;
+
+        
+        margin: auto;
+
+        /* border: 2px solid white; */
+        
+
+    }
+
+    .nav a:hover{
+        font-weight: 800;
+    }
+
+    #nav-ele1{
+        margin-top: auto;
+    }
+    
+}
+
 /* END HEADER */
 
 
 
 /* VIDEO */
+.desk-vid{
+    display: none;
+}
 video{
     width: 100%;
     height:auto;
@@ -257,15 +325,32 @@ video{
     opacity: .65;
     display: block;
 
-    /* border: 2px solid red; */
+    /* border: 2px solid red; */ 
+}
+
+@media screen and (min-width:560px) {
+    video source{
+        content: src("/Assets/shortFilms/shortFilms_bg_video_desktop_HD.mp4");
+    }
+
+    .desk-vid{
+        display: block;
+    }
+
+    .mob-vid{
+        display: none;
+    }
     
 }
+/* END VIDEO */
+
 
 /* HERO */
 
 .hero{
-    width: 100%;
+    width: min(100%,1600px);
     position: relative;
+    margin: auto;
 
     /* border: 2px solid white; */
 }
@@ -317,6 +402,22 @@ video{
 
 }
 
+@media screen and (min-width:560px) {
+    .hero-card{
+        bottom: 10%;
+        margin-left: 8%;
+    }
+
+    .hero h2{
+        font-size: 1.75rem;
+    }
+
+    .hero-name{
+        font-size: 2.4rem;
+    }
+    
+}
+
 
 /* END HERO */
 
@@ -334,6 +435,8 @@ video{
     height: 100%;
     width: 10px;
     background-color: var(--p_black);
+
+    /* border:2px solid black; */
 }
 
 .gallery h2{
@@ -351,6 +454,7 @@ video{
     padding-top: 2.6rem;
     display: grid;
     gap: 2rem;
+    margin: auto;
 }
 
 .card{
@@ -432,6 +536,31 @@ video{
     box-shadow: 10px 15px 0px rgb(191, 191, 191);
 }
 
+
+@media screen and (min-width:560px) {
+    .gallery{
+        width: min(100%,1600px);
+        padding-inline: 3.5rem;
+        grid-template-columns: auto auto;
+        align-items: start;
+    }
+
+    .gallery-head{
+        align-items: center;
+        height: 100%;
+        margin-block: .5rem;
+        grid-column: 1/3;
+        padding-bottom: 1rem;
+    }
+
+    
+
+    .gallery-head h2{
+        font-size: 2.6rem;
+        /* line-height: 2.7rem; */
+    }
+    
+}
 /* GALLERY END */
 
 /* YOUTUBE */
