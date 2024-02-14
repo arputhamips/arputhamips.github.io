@@ -315,6 +315,11 @@ a:hover{
 .desk-vid{
     display: none;
 }
+
+.mob-vid{
+    display: block;
+}
+
 video{
     width: 100%;
     height:auto;
@@ -323,7 +328,6 @@ video{
     left: 0; */
     z-index: 0;    
     opacity: .65;
-    display: block;
 
     /* border: 2px solid red; */ 
 }
@@ -461,10 +465,13 @@ video{
 }
 
 .card{
+
     color: var(--p_black);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.12);
     position: relative;
     transition: .5s ease-out;
+    border-radius: 5px;
+    /* width: 40.1vw; */
 
     /* border: 2px solid rgb(0, 0, 0); */
 }
@@ -475,11 +482,16 @@ video{
     align-items: center;
     padding: .7rem;
 
+    /* border: 2px solid mediumspringgreen; */
+
 }
 
 .card article h2{
-    padding-left: 1rem;
+    font-size: 1rem;
+    /* padding-left: 1rem; */
     letter-spacing: 1.5px;
+
+    /* border: 2px solid red; */
 }
 
 .card article button{
@@ -488,12 +500,13 @@ video{
     background-color: var(--p_white);
     color: var(--p_black);
     font-family: louis;
-    font-size: 1.2rem;
+    font-size: min(1.2rem,2vw);
     display: flex;
     align-items: center;
     padding-right: 10px;
     border-radius: 5px;
     transition: .3s;
+
 }
 
 .card article button:hover{
@@ -507,6 +520,7 @@ video{
 .card img{
     width: 100%;
     height: auto;
+    border-radius: 5px 5px 0 0;
 }
 
 .thumb{
@@ -523,6 +537,10 @@ video{
 
 .card-description{
     transition: .5s;
+    font-size: 5vw;
+    text-align: justify;
+
+    /* border:2px solid aqua; */
 }
 
 .card:hover .thumb{
@@ -543,8 +561,8 @@ video{
 @media screen and (min-width:560px) {
     .gallery{
         width: min(100%,1600px);
-        padding-inline: 3.5rem;
-        grid-template-columns: auto auto;
+        padding-inline: 5%;
+        grid-template-columns: 1fr 1fr;
         align-items: start;
     }
 
@@ -561,6 +579,10 @@ video{
     .gallery-head h2{
         font-size: 2.6rem;
         /* line-height: 2.7rem; */
+    }
+
+    .card-description{
+        font-size: 2vw;
     }
     
 }
