@@ -105,8 +105,13 @@ a:hover{
 }
 
 .width{
-    width: min(85vw,1000px);
+    width: min(85vw,1200px);
     margin:auto;
+}
+
+.width-big{
+    width: min(100vw,1260px);
+    margin: auto;
 }
 
 .opacity{
@@ -314,12 +319,17 @@ a:hover{
 
 /* END HEADER */
 
+
+
+
 /* MAIN IMAGE */
 
 .main-img{
     width: 100%;
     position: relative;
     padding-inline: 2rem;
+
+
 
     /* border:2px solid white; */
 }
@@ -334,6 +344,7 @@ a:hover{
     height: auto;
     position: absolute;
     bottom: 0;
+    left: 0;
     z-index: 1;
     
 
@@ -348,6 +359,8 @@ a:hover{
     background-color: var(--p_white);
     color: var(--p_black);
     padding-block: 2rem;
+    
+
 
     /* border: 2px solid blue; */
 }
@@ -356,7 +369,7 @@ a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 7vw;
+    padding-inline: min(3rem,7vw);
     
 
     /* border:2px solid red; */
@@ -380,7 +393,7 @@ a:hover{
 }
 
 .title-block h2{
-    font-size: 8vw;
+    font-size: min(4rem,8vw);
     letter-spacing: 1.5px;
     font-weight: 600;
     display: flex;
@@ -390,7 +403,7 @@ a:hover{
 }
 
 .title-block h2 span{
-    font-size: 4.5vw;
+    font-size: min(2.6rem,4.5vw);
     font-family: louis_i;
     font-weight: 300;
     letter-spacing: 0px;
@@ -399,8 +412,8 @@ a:hover{
 }
 
 .mt{
-    width: 16vw;
-    height:16vw;
+    width: min(160px,14vw);
+    height:min(160px,14vw);
     display: flex;
     place-content: center;
     position: relative;
@@ -426,17 +439,17 @@ a:hover{
 
 /* TEASER VIDEO PLAYER */
 
-.teaser{
-    padding: min(5rem,8vw);
-
-    /* border: 2px solid red; */
-}
+/* .teaser{
+    
+    
+    border: 2px solid red;
+} */
 
 .vid-player{
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%;
+    padding-bottom: 56.25%;
 
     
     /* border: 2px solid blue; */
@@ -444,7 +457,8 @@ a:hover{
 
 .vid-player iframe{
     position: absolute;
-    inset: 0 0 0 0 ;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
 
@@ -456,14 +470,14 @@ a:hover{
     padding: min(8vw,2.5rem);
     display: flex;
     flex-flow: column nowrap;
-    gap: 6vw;
+    gap: min(6vw,2rem);
     justify-content: center;
     width: 100%;
 
 }
 
 .teaser button{
-    padding: 5vw;
+    padding: min(1.5rem,5vw);
     border: none;
     background-color: var(--red);
     border-radius: 5px;
@@ -490,6 +504,44 @@ a:hover{
 
 /* TEASER VIDEO END */
 
+/* TOKENS */
+.tokens{
+    background-color: var(--sec_white);
+    color: var(--p_white);
+    padding: min(12vw,2rem);
+    grid-area: c;
+
+    /* border: 2px solid red; */
+
+}
+
+.tokens ul{
+    list-style: none;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+    gap: min(.7rem,5vw);
+
+    /* border: 2px solid green; */
+
+
+}
+
+.tokens ul li{
+    font-size: 1.3rem;
+    padding: min(1rem,5vw);
+    background-color: var(--p_black);
+    border-radius: 5px;
+    box-shadow: 2px 2px var(--s_white);
+}
+
+.tokens .lang{
+    background-color: var(--red);
+    text-shadow: 2px 2px var(--s_white);
+
+}
+
 
 
 /* DESCRIPTION */
@@ -499,6 +551,7 @@ a:hover{
     padding: 2rem;
     position: relative;
     z-index: 0;
+
 }
 
 .desc i{
@@ -537,7 +590,7 @@ a:hover{
     display: flex;
     flex-flow: column nowrap;
     gap: min(2rem,6vw);
-    justify-content: space-evenly;
+    justify-content: center;
 
 
     /* border: 2px solid red; */
@@ -549,8 +602,8 @@ a:hover{
     text-align: center;
     display: grid;
     place-content: center;
-    line-height: 7vw;
-    border-radius: 10px;
+    /* line-height: 1.2rem; */
+    border-radius: 5px;
     font-family: louis;
     font-weight: 600;
     letter-spacing: 1.2px;
@@ -573,7 +626,7 @@ a:hover{
 .budget{
     padding: 1.5rem;
     background-color: var(--p_black);
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 5px 5px var(--sec_white);
     display: flex;
     flex-flow: column nowrap;
@@ -595,20 +648,75 @@ a:hover{
     font-weight: 900;
 }
 
+/* INFO END */
+
+
+/* POSTER GALLERY */
+
+.posters{
+    padding: min(5vw,1rem);
+    background-color: rgb(30, 30, 30);
+
+    /* border: 2px solid red; */
+}
+
+/* .head-container{
+
+    
+} */
+
+.head-container article{
+    display: flex;
+    padding: min(5vw,1rem);
+    font-size: min(8vw,1.2rem);
+    letter-spacing: 1.2px;
+    color: var(--sec_white);
+
+    /* border: 2px solid cyan; */
+}
+
+.head-container .deco{
+    background-color: var(--sec_white);
+    width: 10px;
+}
+
+.head-container .poster-gallery{
+    display: flex;
+    /* justify-content: space-evenly; */
+    overflow: scroll;
+    gap: min(5vw,1rem);
+    padding: 1rem;
+
+
+    /* border: 2px solid pink; */
+}
+
+.head-container .poster-gallery img{
+    width: min(75%,450px);
+    height: auto;
+    /* padding: min(5vw,1rem); */
+    box-shadow: 5px 5px 10px rgba(157, 157, 157, 0.10);
+    border-radius: 5px;
+}
+
+/* POSTER GALLERY END */
+
+
 
 /* FOOTER */
 .contact{
     color: var(--p_white);
     text-align: left;
     margin: auto;
+    background-color: var(--p_black);
     /* padding: 1rem; */
 
 
-    
-    
     /* border: 2px solid white; */
     
 }
+
+
 
 footer h2{
     font-family: lemon_m;
@@ -651,6 +759,179 @@ footer h2{
     padding: .5rem;
     font-size: 1.2rem;
 }
+
+@media screen and (min-width:560px) {
+
+    .wrapper{
+        flex-flow: row nowrap;
+        gap: 1.5rem;
+    }
+
+    
+}
+
+
+/* ------------------------------- */
+
+
+
+/* MEDIA QUERIES */
+/* WEB */
+
+
+@media screen and (min-width:560px) {
+
+    body{
+        background-color: var(--sec_white);
+    }
+    
+    main{
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: space-around;
+        /* background-color: var(--p_white); */
+        
+        /* border: 5px solid cyan; */
+
+    }  
+    
+    .web-container{
+        min-width: 50%;
+        /* height: 100%; */
+        background-color: var(--p_white);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        border-radius: 6px;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-left: .5rem;
+
+        /* border:2px solid red; */
+        
+    }
+
+
+    .main-img{
+        min-width: 40%;
+        padding-inline: 0;
+        flex-basis: 45%;
+        display: grid;
+        place-content: start;
+        margin-top: 1rem;
+        border-radius: 6px;
+        margin-inline: .5rem;
+    }
+    
+    .hero-img{
+        border-radius: 6px;
+       
+    }
+
+    .overlay{
+        display: none;
+    }
+
+    .content{
+        padding-block: 0;
+        
+        
+    }
+
+    .title-block{
+        padding-inline:0;
+        padding: 1.5rem;
+        
+    }
+
+    .title-block h2{
+        font-size: 2rem;
+    }
+
+    .title-block h2 span{
+        font-size: 1.2rem;
+    }
+
+    .mt{
+        width: 2%;
+        height: 2%;
+    }
+
+    .vid-player{
+        border-radius: 7px;
+    }
+
+    
+
+   
+
+   .buttons{
+    flex-flow: row nowrap;
+    justify-content: center;
+    /* padding-left: 1rem; */
+    padding: 1rem ;
+    gap: 1rem;
+    width: 100%;
+
+   }
+
+   .teaser button{
+    font-size: 1rem;
+    padding: .8rem;
+   }
+
+   .tokens{
+    min-width: 50%;
+    border-radius: 5px;
+   }
+
+   .tokens ul li{
+    font-size: 1rem;
+    padding: .6rem;
+
+   }
+
+   .info{
+    flex-flow: row nowrap;
+    gap: 1.4rem;;
+    align-items: stretch;
+    
+
+   }
+
+   .credits{
+    flex: 1;
+    max-width: 220px;
+    position: relative;
+    /* height: 100%; */
+    /* min-height: 500px; */
+   }
+
+
+   .budget{
+    height: 100%;
+    flex: 1;
+    max-width: 220px;
+    /* width: auto; */
+   }
+
+   .head-container .poster-gallery img{
+    width: 33%;
+    box-shadow: 5px 5px 10px rgba(157, 157, 157, 0.06);
+
+   }
+
+
+
+
+
+
+
+   
+
+    
+}
+
 
 
 
