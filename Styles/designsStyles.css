@@ -1,0 +1,185 @@
+/* HERO IMG */
+.hero{
+    position: relative;
+
+    /* border: 2px solid green; */
+}
+
+.hero-img-mob{
+    width: 100%;
+    height: auto;
+    /* opacity: .45; */
+    filter: brightness(.85);
+    display: block;
+    
+    animation: opacity-600 3s ease-out;
+
+
+    /* border: 5px solid red; */
+}
+
+@media (min-width:560px) {
+    
+    .hero-img-mob{
+        content: url(/Assets/designPage/designPageBg-webSat.jpg);
+    }
+
+    .hero-card{
+        margin-left: 2.5rem;
+        transform-origin: left;
+        transform: scale(1.2);
+        
+    }
+}
+
+
+@keyframes opacity-600 {
+    from{opacity: 0;}
+    to{opacity: 1;}
+    
+}
+
+.hero-card{
+    position: absolute;
+    bottom: 10%;
+    padding: 2rem;
+
+    /* border: 2px solid magenta; */
+}
+
+.the{
+    font-size: 1.3rem;
+    opacity: 0;
+    animation: opacity 3s 5s ease-out forwards;
+
+    /* border: 2px solid blue; */
+}
+
+
+.of{
+    font-family: louis;
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 34.5%;
+    left: 34%;
+    opacity: 0;
+    animation: opacity 3s 5s ease-out forwards;
+
+}
+
+.nirmal{
+    font-family: avone;
+    letter-spacing: 1.4px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 11%;
+    opacity: 0;
+    animation: opacity 3s 5s ease-out forwards;
+ 
+    
+}
+
+@keyframes opacity {
+    from{opacity: 0;}
+    to{opacity: .6;}
+    
+}
+
+
+/* SVG AND ANIMATION */
+
+
+svg{
+    fill: none;
+    stroke: azure;
+    stroke-dasharray: 102%;
+    stroke-dashoffset: 0%;
+    stroke-width: 2px;
+    /* animation: stroke 5s 1s ease-out; */
+    width: 40%;
+    height: auto;
+    position: relative;
+    left: -5.85%;
+
+
+}
+
+path{
+    fill-opacity: 1;
+    animation: stroke 5s 2s ease-out; 
+    animation-fill-mode: backwards;
+    
+
+}
+
+@keyframes stroke {
+    0%{
+        stroke-dasharray: 100%;
+        stroke-dashoffset: 100%;
+        fill-opacity: 0;
+
+    }
+    50%{
+        stroke-dashoffset: 0%;
+        fill-opacity: 0;
+    }
+    100%{
+        stroke-dashoffset: 0%;
+        fill-opacity: 1;
+    }
+    
+}
+/* SVG END */
+
+
+/* GALLERY START */
+
+.grid-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* width: min(100%,1200px); */
+
+    /* border: 2px solid red; */
+}
+
+.grid-wrapper{
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    grid-auto-rows: min(360px,100vw);
+    grid-auto-flow: dense;
+
+    /* border: 2px solid cyan; */
+}
+
+.grid-wrapper img{
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+.card-tall{
+    grid-row: span 2 / auto;
+}
+
+@media screen and (min-width: 560px)  {
+    
+    .card-wide{
+        grid-column: span 2 / auto;
+    }
+
+    .card-big{
+        grid-column: span 2 / auto;
+        grid-row: span 2 / auto; 
+    }
+
+}

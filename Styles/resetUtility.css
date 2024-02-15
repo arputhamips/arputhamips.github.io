@@ -110,7 +110,7 @@ a:hover{
 }
 
 .width-big{
-    width: min(100vw,1260px);
+    width: min(100vw,1200px);
     margin: auto;
 }
 
