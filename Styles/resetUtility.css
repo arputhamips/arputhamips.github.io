@@ -1,0 +1,139 @@
+/* VARIABLES */
+:root{
+    --p_white: #fff;
+    --p_black: #121215;
+    --s_white: #7e7e7e;
+    --sec_white: #dfdfdf;
+    --red: #f38486;
+
+}
+
+/* FONTS */
+@font-face {
+    font-family: avone;
+    src: url(/Assets/Fonts/AVONE.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: louis;
+    src:url(/Assets/Fonts/Louis\ George\ Cafe.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: louis_i;
+    src:url(/Assets/Fonts/Louis\ George\ Cafe\ Italic.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: autograph;
+    src: url(/Assets/Fonts/Autography.otf) format(opentype);
+}
+
+@font-face {
+    font-family: broad;
+    src: url(/Assets/Fonts/BROADW.TTF) format(truetype);
+}
+
+@font-face {
+    font-family: tommy;
+    src: url(/Assets/Fonts/MADE\ TOMMY\ Medium_PERSONAL\ USE.otf) format(opentype);
+}
+
+@font-face {
+    font-family: lemon_m;
+    src: url(/Assets/Fonts/LEMONMILK-Medium.otf) format(opentype);
+}
+
+@font-face {
+    font-family: trinco;
+    src: url(/Assets/Fonts/Trinco\ Normal\ Plain.ttf) format(truetype);
+}
+ 
+
+/* HTML RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 180vh;
+    width: 100%;
+    /* display: flex;
+    flex-flow: column nowrap;
+    align-items: center;     */
+    font-family: louis,sans-serif;
+    /* text-align: center; */
+    color: var(--p_white);
+    background-color: var(--p_black);
+    /* overflow-x: hidden; */
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    color: var(--p_white);
+}
+
+a:hover{
+    font-weight: 900;
+}
+
+/* END HTML RESET */
+
+
+/* UTILITY CLASSES  */
+
+.nodec{
+    font-family: louis,sans-serif;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+.italic-louis{
+    font-family: louis_i;
+}
+
+.width{
+    width: min(85vw,1200px);
+    margin:auto;
+}
+
+.width-big{
+    width: min(100vw,1260px);
+    margin: auto;
+}
+
+.opacity{
+    opacity: .63;
+    /* font-size: .7rem; */
+}
+
+.small{
+    font-size: 1rem;
+}
+
+
+
+/* END UTILITY CLASSES */
+
+
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar{
+    /* width:10px;
+    height: 0px; */
+    display: none;
+}
+/* END SCROLLBAR */
