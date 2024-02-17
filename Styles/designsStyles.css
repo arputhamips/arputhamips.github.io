@@ -85,6 +85,7 @@ svg{
     height: auto;
     position: relative;
     left: -5.85%;
+    animation: opacity-600 1.5s 2s ease backwards;
 
 
 }
