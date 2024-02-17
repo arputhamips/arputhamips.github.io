@@ -59,7 +59,7 @@
     font-weight: 300;
 }
 
-:is(.nav) a:hover,a.active,a.focus{
+:is(.nav) a:hover,a.active,a.focus-within{
     font-weight: 900;                       
 }
 
