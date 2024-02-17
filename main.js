@@ -35,8 +35,11 @@ function openNav() {
 }
 
 function closeNav(){
-    nav.style.transform = "translateY(-150%)";
-    isOpen = false;
+    var q = window.matchMedia("(max-width:560px)")
+    if (q.matches){
+        nav.style.transform = "translateY(-150%)";
+        isOpen = false;
+    }
 }
 
 button.addEventListener('click', () => {
