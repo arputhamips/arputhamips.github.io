@@ -40,8 +40,23 @@
     font-size: 8vw;
     font-weight: 200;
     text-wrap: nowrap;
+    
 
     /* border:2px solid white; */
+}
+
+#name::before{
+    content:'NIRMAL A J L A';
+    animation: name 5s 2s ease backwards;
+}
+
+@keyframes name {
+    0%{content: 'JHON';}
+    25%{content: 'LEONARD';}
+    50%{content: 'ARPUTHA';}
+    75%{content: 'NIRMAL';}
+    100%{content: 'NIRMAL A J L A'}
+    
 }
 
 .hero-name-block p{
@@ -215,6 +230,104 @@
     margin: 1.5rem;
     padding: .4rem;
     opacity: .6;
+}
+/* QUOTE END */
+
+
+/* WORKS */
+.works{
+    background-color: var(--p_white);
+    color: var(--p_black);
+}
+
+.works-head{
+    display: flex;
+    margin-bottom: 1rem;
+
+    /* border: 2px solid red; */
+}
+
+.works .deco {
+    width: 10px;
+    
+    background-color: var(--p_black);
+    
+    
+
+    
+}
+
+.works h2{
+    margin-left: 1rem;
+    font-family: lemon_m;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.carosel{
+    padding-block: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.carosel div{
+    box-shadow: 4px 4px 8px -1px #0000003e ;
+    width: 35%;
+    border-radius: 5px;
+    place-content: center;
+    overflow: hidden;
+    position: relative;
+    transition: .3s;
+
+}
+
+.carosel div:hover{
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 8px -1px #0000008f ;
+}
+
+.carosel i{
+    color: var(--p_white);
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.carosel P{
+    display: none;
+}
+
+.carosel img{
+    
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    
+    filter: brightness(.8) saturate(0.6) blur(50px);
+
+}
+
+@media  (min-width:560px) {
+    .carosel i{
+        top: 45%;
+    }
+   
+    .carosel p{
+        display: block;
+        text-align: center;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: .8rem;
+        font-weight: 600;
+        color: var(--sec_white);
+    }
+    
 }
 
 
