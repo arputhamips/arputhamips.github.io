@@ -72,6 +72,8 @@
     position: absolute;
     bottom: 0vw;
     right: 13vw;
+
+
 }
 
 .mob-hero-img{
@@ -434,6 +436,8 @@
         height: auto;
         position: relative;
         opacity: .6;
+
+        /* display: none; */
     }
 
     .hero-img{
@@ -450,7 +454,7 @@
     }
 
     .hero-name-block{
-        min-width: 50vw;
+        width: 100%;
         justify-content: end;
         position: absolute;
         bottom: 5%;
