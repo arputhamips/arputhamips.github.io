@@ -48,9 +48,19 @@
 #name::before{
     content:'NIRMAL A J L A';
     animation: name 5s 2s ease backwards;
+    -wevkit-animation: name 5s 2s ease backwards;
 }
 
 @keyframes name {
+    0%{content: 'JHON';}
+    25%{content: 'LEONARD';}
+    50%{content: 'ARPUTHA';}
+    75%{content: 'NIRMAL';}
+    100%{content: 'NIRMAL A J L A'}
+    
+}
+
+@-webkit-keyframes name {
     0%{content: 'JHON';}
     25%{content: 'LEONARD';}
     50%{content: 'ARPUTHA';}

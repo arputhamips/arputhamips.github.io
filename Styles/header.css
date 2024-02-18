@@ -32,6 +32,7 @@
     width: 90%;
     margin-top: .5rem;
     border-radius: 5px;
+    -webkit-backdrop-filter: blur(60px) brightness(0.8);
     backdrop-filter: blur(60px) brightness(0.8);
     
     
@@ -84,7 +85,7 @@ header button i{
     padding-block: .4rem;
     position: absolute;
     top: 100%;
-    
+    -webkit-backdrop-filter: blur(60px)  brightness(.8);
     backdrop-filter: blur(60px)  brightness(.8);
 
     /* border: 2px solid black; */
@@ -95,6 +96,7 @@ header button i{
     .header{
         flex-flow: row nowrap;
         gap: none;
+        -webkit-backdrop-filter: blur(60px) brightness(.8);
         backdrop-filter: blur(60px) brightness(.8);
         position: sticky;
         top: 0;
@@ -112,6 +114,7 @@ header button i{
         position: static;
         margin-top: 0;
         margin-right: .5rem;
+        -webkit-backdrop-filter: none;
         backdrop-filter: none;
     }
 
@@ -130,6 +133,7 @@ header button i{
     .mob-header{
         width: auto;
         position: static;
+        -webkit-backdrop-filter: none;
         backdrop-filter: none;
 
         

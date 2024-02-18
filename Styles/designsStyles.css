@@ -14,6 +14,7 @@
     display: block;
     
     animation: opacity-600 3s ease-out;
+    -webkit-animation: opacity-600 3s ease-out;
 
 
     /* border: 5px solid red; */
@@ -51,6 +52,12 @@
     
 }
 
+@-webkit-keyframes opacity-600 {
+    from{opacity: 0;}
+    to{opacity: 1;}
+    
+}
+
 
 
 .the{
@@ -58,6 +65,7 @@
     letter-spacing: 4px;
     opacity: 0;
     animation: opacity 3s 5s ease-out forwards;
+    -webkit-animation: opacity 3s 5s ease-out forwards;
 
     /* border: 2px solid blue; */
 }
@@ -65,6 +73,12 @@
 
 
 @keyframes opacity {
+    from{opacity: 0;}
+    to{opacity: .25;}
+    
+}
+
+@-webkit-keyframes opacity {
     from{opacity: 0;}
     to{opacity: .25;}
     
@@ -86,6 +100,7 @@ svg{
     position: relative;
     left: -5.85%;
     animation: opacity-600 1.5s 2s ease backwards;
+    -webkit-animation: opacity-600 1.5s 2s ease backwards;
 
 
 }
@@ -94,6 +109,8 @@ path{
     fill-opacity: 1;
     animation: stroke 5s 2s ease-out; 
     animation-fill-mode: backwards;
+    -webkit-animation: stroke 5s 2s ease-out; 
+    -webkit-animation-fill-mode: backwards;
     
 
 }
@@ -103,7 +120,6 @@ path{
         stroke-dasharray: 100%;
         stroke-dashoffset: 100%;
         fill-opacity: 0;
-
     }
     50%{
         stroke-dashoffset: 0%;
@@ -113,8 +129,25 @@ path{
         stroke-dashoffset: 0%;
         fill-opacity: 1;
     }
-    
 }
+    
+@-webkit-keyframes stroke {
+     0%{
+        stroke-dasharray: 100%;
+        stroke-dashoffset: 100%;
+        fill-opacity: 0; 
+    }
+    50%{
+        stroke-dashoffset: 0%;
+        fill-opacity: 0;
+        }
+    100%{
+        stroke-dashoffset: 0%;
+        fill-opacity: 1;
+    }
+    }
+    
+
 /* SVG END */
 
 
@@ -227,6 +260,7 @@ path{
 
 .info-block{
     padding: 2rem;
+    -webkit-backdrop-filter: blur(45px) brightness(.55);
     backdrop-filter: blur(45px) brightness(.55);
     border-radius: 5px;
     position:relative;
