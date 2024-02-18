@@ -267,11 +267,28 @@
     flex-flow: column nowrap;
     gap: min(2rem,6vw);
     justify-content: center;
-
-
+    
+    
     /* border: 2px solid red; */
 
 }
+
+@media (min-width:560px){
+    .info{
+        height: min(40vh,300px);
+
+    }
+}
+
+.info div{
+    /* background-color: transparent; */
+    background-image: url(/Assets/Img/vecteezy_abstract-blurred-color-gradient-background_6415042.jpg);
+    background-position: center;
+    background-size: cover;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.20);
+    
+}
+
 
 .credits{
     padding: 1.5rem;
@@ -286,15 +303,16 @@
     font-size: min(1.2rem,3.5vw);
     background-color: var(--p_black);
     box-shadow: 5px 5px var(--sec_white);
-
+    z-index: 1;
     /* border: 2px solid red; */
 
 }
 
 .my-credits{
-    /* padding: .5rem; */
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
     font-family: louis_i;
-    font-size: min(1rem,4vw);
+    /* font-size: min(1rem,4vw); */
 
     /* border: 2px solid red; */
 }
@@ -310,7 +328,16 @@
     justify-content: center;
 
 
+
+
     /* border: 2px solid red; */
+}
+
+.budget span{
+    font-size: 1.2rem;
+    font-family: louis_i;
+    font-weight: 600;
+    letter-spacing: 1.3px;
 }
 
 .budget i{
@@ -322,6 +349,25 @@
     padding-top: 1rem;
     font-size: min(2rem,10vw);
     font-weight: 900;
+}
+
+.trivia{
+    display: grid;
+    place-content: center;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+.trivia h3{
+    text-align: center;
+    padding-bottom: 1.2rem;
+    font-family: louis_i;
+    letter-spacing: 1.5px;
+    /* padding-bottom: 1rem; */
+}
+.trivia h4{
+    text-align: center;
+    padding-bottom: .8rem;
 }
 
 /* INFO END */

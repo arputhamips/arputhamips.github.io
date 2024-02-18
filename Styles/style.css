@@ -282,18 +282,20 @@
     gap: 1rem;
 }
 
-.carosel div{
+.carosel a{
     box-shadow: 4px 4px 8px -1px #0000003e ;
     width: 35%;
     border-radius: 5px;
     place-content: center;
-    overflow: hidden;
     position: relative;
     transition: .3s;
+    overflow: hidden;
 
 }
 
-.carosel div:hover{
+
+
+.carosel a:hover{
     transform: translateY(-5px);
     box-shadow: 4px 4px 8px -1px #0000008f ;
 }

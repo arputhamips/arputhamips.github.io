@@ -200,7 +200,7 @@ video{
     /* border: 2px solid red; */
 }
 
-.card article button{
+.card article .watch-link{
     padding: .4rem;
     border: none;
     background-color: var(--p_white);
@@ -213,15 +213,19 @@ video{
     border-radius: 5px;
     transition: .3s;
 
+    /* border: 2px solid cyan; */
+
 }
 
-.card article button:hover{
+.card article .watch-link:hover{
     font-weight: 900;
 }
 
-.card article button i{
+.card article .watch-link i{
     padding: 5px;
 }
+
+
 
 .card img{
     width: 100%;
