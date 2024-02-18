@@ -27,7 +27,6 @@ const popUp = e => {
 
     if (temp[tit] != undefined) {
         if (e.target.nodeName = 'IMG')  {
-            
             title.innerHTML = temp[tit];
             img1.src = temp[i1];
             img2.src = temp[i2];
@@ -55,7 +54,7 @@ gall.addEventListener('click', popUp);
 closeBtn.addEventListener('click', ()=>{
     grid.style.display = "none";
     document.body.style.overflow = 'auto';
-    gall.style.filter = 'brightness(1)'
+    gall.style.filter = 'brightness(1)';
 })
 
 
