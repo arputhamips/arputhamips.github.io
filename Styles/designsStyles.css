@@ -13,9 +13,8 @@
     filter: brightness(.85);
     display: block;
     
-    animation: opacity-600 3s ease-out;
     -webkit-animation: opacity-600 3s ease-out;
-
+    animation: opacity-600 3s ease-out;
 
     /* border: 5px solid red; */
 }
@@ -64,8 +63,9 @@
     font-size: 1rem;
     letter-spacing: 4px;
     opacity: 0;
-    animation: opacity 3s 5s ease-out forwards;
     -webkit-animation: opacity 3s 5s ease-out forwards;
+    animation: opacity 3s 5s ease-out forwards;
+    
 
     /* border: 2px solid blue; */
 }
@@ -99,18 +99,20 @@ svg{
     height: auto;
     position: relative;
     left: -5.85%;
-    animation: opacity-600 1.5s 2s ease backwards;
     -webkit-animation: opacity-600 1.5s 2s ease backwards;
+    animation: opacity-600 1.5s 2s ease backwards;
+    
 
 
 }
 
 path{
     fill-opacity: 1;
-    animation: stroke 5s 2s ease-out; 
-    animation-fill-mode: backwards;
     -webkit-animation: stroke 5s 2s ease-out; 
     -webkit-animation-fill-mode: backwards;
+    animation: stroke 5s 2s ease-out; 
+    animation-fill-mode: backwards;
+    
     
 
 }
