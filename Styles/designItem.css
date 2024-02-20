@@ -81,6 +81,7 @@
     z-index: 1;
     font-weight: 600;
     text-align: justify;
+    color:var(--p_black);
 
     /* text-shadow: 2px 2px 6px black; */
     
@@ -99,7 +100,7 @@
     left: 0;
     background-position: center;
     border-radius: 5px;
-    filter: blur(25px) brightness(.5) saturate(.8) ;
+    filter: blur(55px) brightness(2.1) saturate(.2) ;
     overflow: hidden;
     
     /* border: 5px solid red; */
@@ -118,6 +119,11 @@
 
 .card-tall{
     grid-row: span 2 / auto;
+}
+
+.card-cover{
+    grid-column: span 2 / auto;
+    grid-row: span 3 / auto;
 }
 
 /* GRID ENDS */
