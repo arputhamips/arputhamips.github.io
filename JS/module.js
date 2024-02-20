@@ -49,10 +49,19 @@ let temp =
 'vodaimg1': "/Assets/designPage/Marketing/10. VODAFONE MAIN SLIDE.jpg",
 'vodaimg2': "/Assets/designPage/Marketing/10. VODAFONE CONTENT.jpg",
 
+'hola1': "HOLA FUTURE v1" ,
+'hola1img1': "/Assets/designPage/Hola/hola1.jpg",
+'hola1img2': "/Assets/designPage/Hola/hola1Content.jpg",
 
+'hola2': "HOLA FUTURE v1" ,
+'hola2img1': "/Assets/designPage/Hola/hola2.jpg",
+'hola2img2': "/Assets/designPage/Hola/hola2Content.jpg",
+'hola2link': "https://www.instagram.com/p/CjDQuP6Pncp/?igsh=cnAxcDcxOTQxNnky",
 
-
-
+'hola3': "HOLA FUTURE v1" ,
+'hola3img1': "/Assets/designPage/Hola/hola3.jpg",
+'hola3img2': "/Assets/designPage/Hola/hola3Content.jpg",
+'hola3link': "https://www.instagram.com/p/CjSrswIPHGu/?igsh=MXRscnFkbnBpdXBqdQ==",
 }
 
 
