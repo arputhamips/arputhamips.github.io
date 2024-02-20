@@ -71,12 +71,17 @@
     overflow: hidden;
     transition: 0.25s;
     height: 100%;
+    
 
     /* border: 2px solid black; */
 }
 
 .gallery-container .bg p{
+    padding: 1rem;
     z-index: 1;
+    font-weight: 600;
+    text-align: justify;
+
     /* text-shadow: 2px 2px 6px black; */
     
      
@@ -84,9 +89,9 @@
 
 .gallery-container .bg:before{
     content: '';
-    background-image: url(https://source.unsplash.com/a-person-walking-up-a-set-of-stairs-NfWkHMCoaFc);
+    background-image: url(https://source.unsplash.com/dew-drops-on-glass-panel-bWtd1ZyEy6w);
     z-index: 0;
-    /* background-size: cover; */
+    background-size: cover;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -94,10 +99,10 @@
     left: 0;
     background-position: center;
     border-radius: 5px;
-    filter: blur(40px) brightness(.6) saturate(.8) ;
+    filter: blur(25px) brightness(.5) saturate(.8) ;
     overflow: hidden;
     
-    border: 5px solid red;
+    /* border: 5px solid red; */
     ;
 
 }

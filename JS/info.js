@@ -12,8 +12,11 @@ let a = document.getElementById('link');
 //['id'+'info'] as key for description
 var temp = 
 {"date":'DATE REVEAL',              "dateinfo":'put description here for k!23',                        "datelink":'https://youtu.be/gZjQROMAh_s?si=-XEoDMtWsTC6wrOJ',
-"diwali":'DIWALI 2023',             "diwaliinfo":'One of the better posters of the year',
-"casette":'CEG CASSETTES PODCAST',  "casetteinfo":'Made a promotional poster for the official podcast of the Forum'                                                                 }
+"diwali":'DIWALI 2023',             "diwaliinfo":'Celebratory Design for the Diwali celebrations of 2023',  "diwalilink":'https://www.instagram.com/p/CkFNi8YSI2B/?igsh=dnZtb3p2c3B3bWht',
+"casette":'CEG CASSETTES PODCAST',  "casetteinfo":'A promotional poster for the official podcast of the CEG Tech Form, similarly based reels and instagram stories were also made to promote the podcast', "casettelink": 'https://www.instagram.com/p/CkiiIdzJ4-N/?igsh=eWI4bGFkMzRvbzkz',
+"guest": 'INAUGURATION GUEST',      "guestinfo":'Poster announcing and commomorating the prescence of the Japanese Ambassedor to the inaugral event of Kurukshetra!23',   "guestlink":'https://www.instagram.com/p/CrC5HSZSvaj/?igsh=aG4zbjFocDlmczdh',
+"loop":"K!TALK on HYPERLOOP",       "loopinfo":'Poster for promoting and invitation fo rthe K!talks on Hyperloop',  "looplink":'https://www.instagram.com/p/CoZrzxeoERL/?igsh=NzB1c2dvYnRteXQ4',
+"youth":'YOUTH DAY 23',             "youthinfo":'Design for commoration of Youth Day 2023', }
 
 
 
