@@ -18,7 +18,7 @@ let temp =
 'nikeimg2': "/Assets/designPage/Marketing/2.NIKE CONTENT.jpg",
 
 'mcd': "McDONALD'S" ,
-'mcdimg1': "/Assets/designPage/Marketing/3.MCD.jpg",
+'mcdimg1': "/Assets/designPage/Marketing/3. MCD.jpg",
 'mcdimg2': "/Assets/designPage/Marketing/3.MCD CONTENT.jpg",
 
 'coke': "COCA-COLA" ,
