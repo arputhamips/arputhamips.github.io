@@ -311,7 +311,11 @@
 }
 
 .carosel P{
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .3rem;
+
 }
 
 .carosel img{
@@ -321,7 +325,7 @@
     object-fit: cover;
     border-radius: 5px;
     
-    filter: brightness(.8) saturate(0) blur(50px); 
+    filter: brightness(.7) saturate(.5) blur(50px); 
 
 }
 
