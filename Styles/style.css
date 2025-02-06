@@ -325,7 +325,7 @@
     object-fit: cover;
     border-radius: 5px;
     
-    filter: brightness(.7) saturate(.2) blur(50px); 
+    filter: brightness(.7) saturate(.1) blur(50px); 
 
 }
 
