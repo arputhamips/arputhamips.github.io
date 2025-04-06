@@ -12,7 +12,7 @@
     z-index: 2;
 
     /* background-color: beige; */
-    /* border: 2px solid black; */
+    /* border: 2px solid white; */
 }
 
 .header h1{
@@ -20,6 +20,8 @@
     margin-left: 2rem;
     font-weight: 600;
     letter-spacing: 1.6px;
+
+    /* border: 2px solid white; */
 }
 
 .nav{
@@ -165,8 +167,8 @@ header button i{
 footer h2{
     font-family: lemon_m;
     font-size: 1.5rem;
-    font-weight: 500;
-    padding: 1.5rem 0rem 1rem 0rem ;
+    font-weight: 3;
+    padding: 1.5rem 0rem 1.5rem 0rem ;
 
     /* border: 2px solid white; */
 }
@@ -206,6 +208,11 @@ footer h2{
 
 @media screen and (min-width:560px) {
 
+    footer h2{
+        letter-spacing: 10px;
+        
+    }
+
     .wrapper{
         flex-flow: row nowrap;
         gap: 1.5rem;
@@ -214,6 +221,7 @@ footer h2{
 
     .wrapper quote{
         padding-top: .5rem;
+        line-height: 24px;
     }
 
     

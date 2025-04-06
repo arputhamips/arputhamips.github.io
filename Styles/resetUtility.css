@@ -6,6 +6,9 @@
     --sec_white: #dfdfdf;
     --red: #f38486;
 
+    --primary_black: #0b0b0b;
+    --primary_accent: #f6ad39;
+
 }
 
 /* FONTS */
@@ -48,6 +51,16 @@
     font-family: trinco;
     src: url(/Assets/Fonts/Trinco\ Normal\ Plain.ttf) format(truetype);
 }
+
+@font-face {
+    font-family: code_mono;
+    src: url(/Assets/NewAssets/Fonts/CascadiaMono.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: code;
+    src: url(/Assets/NewAssets/Fonts/CascadiaCode.ttf) format(truetype);
+}
  
 
 /* HTML RESET */
@@ -70,7 +83,7 @@ body{
     font-family: louis,sans-serif;
     /* text-align: center; */
     color: var(--p_white);
-    background-color: var(--p_black);
+    background-color: var(--primary_black);
     /* overflow-x: hidden; */
 }
 
