@@ -17,7 +17,7 @@ function closeNav() {
     isOpen = false;
     setTimeout(() => {
       navLinks.classList.remove("nav-close");
-    }, 2000);
+    }, 700);
   }
 
 function ToggleNav() {
