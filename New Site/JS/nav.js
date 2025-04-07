@@ -21,7 +21,7 @@ function closeNav() {
   }
 
 function ToggleNav() {
-  isMobileSize = window.matchMedia("(max-width: 560px)").matches;
+  isMobileSize = window.matchMedia("(max-width: 640px)").matches;
   // console.log(isMobileSize);
   
   if (isMobileSize) {
