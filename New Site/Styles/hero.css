@@ -39,7 +39,7 @@ main{
 }
 .name-block{
     position: absolute;
-    top: 8%;
+    top: 10%;
     left: 5%;
     width: 85vw;
 
@@ -67,7 +67,7 @@ main{
 .name-block h1{
     font-size: 7.6vw;
     letter-spacing: 3.6vw;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 7vw;
 
     padding: .4rem 4.6vw;
@@ -157,7 +157,7 @@ main{
     overflow: hidden;
     /* width: 120%; */
     left: -20%;
-    top: 17.9%;
+    top: 22%;
 
     
     display: flex;

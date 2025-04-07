@@ -19,6 +19,7 @@ nav .bg-blur-nav{
     /* display: flex; */
     width: 100%;
     backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, .02);
     box-shadow: -.2rem .2rem 6px rgba(0, 0, 0, .15);
 
     /* border: 1px solid white;     */
