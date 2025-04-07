@@ -22,7 +22,7 @@ function closeNav() {
 
 function ToggleNav() {
   isMobileSize = window.matchMedia("(max-width: 560px)").matches;
-  console.log(isMobileSize);
+  // console.log(isMobileSize);
   
   if (isMobileSize) {
     if (!isOpen) {
