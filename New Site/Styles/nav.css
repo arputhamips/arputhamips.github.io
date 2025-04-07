@@ -1,0 +1,203 @@
+header{
+    position: fixed;
+    width: 100%;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+    /* border: 1px solid wheat; */
+}
+
+nav .bg-blur-nav{
+    /* display: flex; */
+    width: 100%;
+    
+
+    backdrop-filter: blur(10px);
+    box-shadow: -.2rem .2rem 6px rgba(0, 0, 0, .15);
+
+    /* border: 1px solid white; */    
+}
+
+nav .width-lock{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+    width: min(100%, 1200px);
+
+    /* border: 1px solid white; */
+}
+
+
+nav h1{
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    font-family: code;
+    padding-left: 1rem;
+    font-weight: 550;
+}
+
+nav button{
+    background: none;
+    border: none;
+    color: var(--p_white);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+.desktop-nav{
+    display: none;
+}
+
+
+
+/* FULL BURGER */
+nav ul{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 4rem;
+    
+    transform-origin: top center;
+
+
+    width: 90%;
+    /* height: 0vh; */
+    border-radius: .5rem;
+    box-shadow: -.3rem .3rem 5px rgba(0, 0, 0, .2);
+
+    overflow: hidden;
+    
+
+    backdrop-filter: blur(10px);
+
+    transition-property: height, display;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    transition-behavior: allow-discrete;
+
+    /* border: 1px solid white; */
+}
+
+
+/* OPEN STATE */
+.nav-open{
+    display: flex;
+    height: 90vh;
+    
+}
+
+/* BEFORE OPEN - STARTING STATE */
+@starting-style{
+    .nav-open{
+        height: 0vh;;
+    }
+}
+
+/* AFTER OPEN - ENDING STATE */
+.nav-close{
+    display: none;
+    height: 0vh;
+}
+
+
+
+
+nav li{
+    width: 100%;
+    text-align: center;
+
+    /* border: 1px solid white; */
+}
+
+nav ul li a {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: code_mono;
+    font-weight: 500;
+    letter-spacing: .2rem;
+
+    /* border: 1px solid white; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 560px){
+    
+    nav{
+        flex-direction: row;
+        
+
+        /* border: 2px solid white; */
+        
+    }
+
+    nav .width-lock{
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        /* border: solid 1px white; */
+    }
+
+    nav h1{
+        font-size: 1.4rem;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    .desktop-nav{
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+
+        backdrop-filter: none;
+        box-shadow: none;
+
+        width: fit-content;
+
+        /* border: 2px solid white; */
+    }
+
+
+
+    .desktop-nav li a{
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, .7);
+        padding:.5rem;
+    }
+    /* MOBILE NAV */
+    nav ul{
+        display: none;
+    }
+
+
+
+
+}
+

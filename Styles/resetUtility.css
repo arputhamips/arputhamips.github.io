@@ -76,7 +76,7 @@ html{
 
 body{
     /* min-height: 180vh; */
-    width: 100%;
+    /* width: 100%; */
     /* display: flex;
     flex-flow: column nowrap;
     align-items: center;     */
@@ -84,6 +84,8 @@ body{
     /* text-align: center; */
     color: var(--p_white);
     background-color: var(--primary_black);
+    
+    height: 100vh;
     /* overflow-x: hidden; */
 }
 

@@ -6,24 +6,41 @@
   <title>NIRMAL A J L A</title>
   <link rel="shortcut icon" href="/Assets/Img/Ajla_Logo.png" type="image/x-icon">
   <link rel="stylesheet" href="/Styles/resetUtility.css">
-  <link rel="stylesheet" href="/Styles/header.css">
-  <!-- <link rel="stylesheet" href='/Styles/style.css'> -->
+  <link rel="stylesheet" href="/New%20Site/Styles/nav.css">
+  <link rel="stylesheet" href="/New%20Site/Styles/hero.css">
+  
 </head>
 
 <body>
+
+  <header>
+    <nav class="nav">
+      <div class="bg-blur-nav">
+        <div class="width-lock">
+          <h1>&lt;NIRMAL A J L A&gt;</h1>
+          <button class="menu-button" id="menu-btn" onclick="ToggleNav()"><i id="btn-icon" class="fa-solid fa-bars"></i></button>
+          <ul class="desktop-nav">
+            <li><a href="#footer">CONTACT</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#i-am">ABOUT</a></li>
+          </ul>
+        </div>
+     </div>
+      <ul class="nav-links" id="navlinks">
+        <li><a id="nav-ele1" onclick="ToggleNav()" href="#footer">CONTACT</a></li>
+        <li><a id="nav-ele2" onclick="ToggleNav()" href="#works">WORKS</a></li>
+        <li><a id="nav-ele3" onclick="ToggleNav()" href="#i-am">ABOUT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+        
+  <img src="/Assets/NewAssets/Img/BG_mobile.jpg" alt="" width="100%" class="bg" />
   
-    <header class="header">
-       
-        <div class="mob-header">
-             <h1 class="title" id="NIRMAL">NIRMAL A J L A</h1>
-             <button class="menu-button" id="menu-btn"><i class="fa-solid fa-bars"></i></button>
-        </div>
-        <div class="nav" id="nav-bar">
-             <a id="nav-ele1" onclick="closeNav()" href="#footer">CONTACT</a>
-             <a id="nav-ele2" onclick="closeNav()" href="#works">WORKS</a>
-             <a id="nav-ele3" onclick="closeNav()" href="#i-am">ABOUT</a>
-        </div>
-    </header>
+  
+  
+  
+           
 
 
     <!-- <footer id="footer" class="contact width">
@@ -56,5 +73,6 @@
       </footer> -->
 
     <script async src="https://kit.fontawesome.com/f32f1dfc0f.js" crossorigin="anonymous"></script>
+    <script src="/New Site/JS/nav.js"></script>
 </body>
 </html>
