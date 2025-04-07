@@ -4,10 +4,19 @@ const btnIcon = document.getElementById("btn-icon");
 
 isOpen = false;
 
+function ScrollLock() {
+  document.body.style.overflowY = "hidden";
+}
+
+function ScrollUnlock() {
+  document.body.style.overflowY = "visible";
+}
+
 function openNav() {
     navLinks.classList.add("nav-open");
     btnIcon.classList.replace("fa-bars","fa-xmark");
     isOpen = true;
+    ScrollLock();
   }
 
 function closeNav() {
@@ -18,6 +27,7 @@ function closeNav() {
     setTimeout(() => {
       navLinks.classList.remove("nav-close");
     }, 700);
+    ScrollUnlock();
   }
 
 function ToggleNav() {

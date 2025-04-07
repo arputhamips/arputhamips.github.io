@@ -1,11 +1,32 @@
-/* HERO SECTION */
+
 
 main{
     z-index: 0;
 }
 
 
+
+
+/* .hero{
+     border: 1px solid white; 
+} /*
+
+
+
+/* ----------------------- */
+/*----- HERO SECTION-------*/
+/* ----------------------- */
+
+
+
+/* --------------------- */
+/* -----NAME BLOCK----- */
+/* --------------------- */
+
+
+
 /* ----MOBILE FORMATTING---- */
+
 .desktop-img{
     display: none; 
     width: 100%;
@@ -16,12 +37,6 @@ main{
     width: 100%;
     height: auto;
 }
-
-.hero{
-    /* border: 1px solid white; */
-}
-
-/* NAME BLOCK */
 .name-block{
     position: absolute;
     top: 8%;
@@ -130,8 +145,11 @@ main{
 
 
 
+/* ----------------------- */
+/*------IMAGE BLOCK -------*/
+/* ----------------------- */
 
-/* IMAGE BLOCK */
+
 /* MOBILE FORMATTING */
 
 .nirmal{
@@ -175,7 +193,7 @@ main{
 
 .description ul{
     list-style: none;
-    border-radius: 1rem;
+    border-radius: .5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,3 +220,6 @@ main{
     
     /* border: 1px solid white; */
 }
+
+
+/* DESKTOP FORMATTING */
