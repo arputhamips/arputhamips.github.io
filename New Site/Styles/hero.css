@@ -8,15 +8,11 @@ main{
 
 
 .hero{
-     /* border: 1px solid white;  */
-        /* position: absolute;border: 1px solid white; */
-        top: 0;
-     /* overflow: hidden; */
+    display: block;
+     
 } 
 
-.hero img{
-    /* border: 1px solid white; */
-}
+
 
 
 /* ----------------------- */
@@ -75,9 +71,9 @@ main{
 
 .name-block h1{
     font-size: 7.6vw;
-    letter-spacing: 3.6vw;
-    font-weight: 400;
-    line-height: 7vw;
+    letter-spacing: 3.8vw;
+    font-weight: 420;
+    line-height: 8vw;
 
     padding: .4rem 4.6vw;
     flex-grow: 2;
@@ -95,6 +91,7 @@ main{
     font-size: 1.2rem;
     text-align: center;
     opacity: .4;
+
 
     /* border: 1px solid white; */
 }
@@ -116,12 +113,14 @@ main{
 
     .name-block{
         position: absolute;
-        top: 15%;
+        top: 20%;
         left: 2%;
-        width: 60vw;
+        width: 70vw;
     
         display: flex;
         flex-direction: column;
+        height: auto;
+        flex-wrap: nowrap;
         justify-content: left;
     
         font-family: code_mono;
@@ -129,10 +128,12 @@ main{
 
         @media(min-width: 1024px){
             left: 3%;
+            top: 22%;
         }
 
         @media(min-width: 1440px){
             left: 8%;
+            top: 26%;
         }
     
         /* border: 1px solid white; */
@@ -150,12 +151,36 @@ main{
     }
     
     .name-block h1{
-        font-size: 5.2vw;
+        font-size: 4vw;
         letter-spacing: 3.6vw;
         font-weight: 400;
-        line-height: 5vw;
+        line-height: 5.6vw;
     
         padding: .4rem 3.2vw;
+
+
+        @media(min-width: 1024px){
+            font-size: 3.5vw;
+            letter-spacing: 3vw;
+            font-weight: 450;
+            line-height: 4.8vw;
+
+            padding: .4rem 3vw;
+            padding-bottom: 0;
+
+        }
+
+        @media(min-width: 1440px){
+            font-size: 3vw;
+            letter-spacing: 2.6vw;
+            font-weight: 540;
+            line-height: 3.8vw;
+
+
+            padding: .3rem 3vw;
+            padding-bottom: 0;
+            
+        }
     
         /* border: 1px solid white; */
     }
@@ -163,6 +188,24 @@ main{
     #initials{
         font-size: 3vw;
         letter-spacing: 6vw;
+
+        @media(min-width: 1024px){
+            font-size: 2vw;
+            letter-spacing: 5vw;
+        }
+
+        @media(min-width: 1440px){
+            font-size: 1.4vw;
+            letter-spacing: 3.9vw;
+            
+        }
+    }
+
+    .name-block h3{
+        text-align: left;
+        padding-left: 3vw;
+        opacity: .25;
+       
     }
     
 }
@@ -179,9 +222,7 @@ main{
 .nirmal{
     position: absolute;
     overflow: hidden;
-    /* width: 120%; */
-    /* left: -20%; */
-    top: 22.5%;
+    top: 22%;
 
     
     display: flex;
@@ -190,6 +231,7 @@ main{
     
     z-index: 1;
 
+    padding: 0 .5rem;
     padding-bottom: 1rem;
 
     /* border: 1px solid white; */
@@ -221,9 +263,11 @@ main{
     border-radius: .5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 
-    padding-left: 1rem;
+
+
+    padding:0 .8rem;
 
     
     backdrop-filter: blur(10px);
@@ -236,11 +280,13 @@ main{
 }
 
 .description li{
+    
+
     font-family: code_mono;
-    font-size: .55rem;
+    font-size: .64rem;
     /* letter-spacing: 1px; */
     font-weight: 500;
-    padding: 1rem 0;
+    /* text-align: center; */
   
     
     /* border: 1px solid white; */
@@ -248,3 +294,54 @@ main{
 
 
 /* DESKTOP FORMATTING */
+@media screen and (min-width: 640px) {
+    
+    .nirmal{
+        width:55%;
+        right: 5%;
+        top: 19%;
+    }
+
+    .nirmal .desktop-img{
+        width: 50%;
+    }
+
+    .description{
+        padding-left: 1rem;
+
+        @media(min-width: 1024px){
+            padding-left: 1.4rem;
+        }
+
+        @media(min-width: 1440px){
+            padding-left: 2rem;
+            
+        }
+    }
+
+    .description ul{
+        padding: 0 .85rem;
+
+        @media(min-width: 1024px){
+            padding: 0 1rem;
+        }
+
+        @media(min-width: 1440px){
+            padding: 0 1.5rem;
+            
+        }
+    }
+
+    .description li{
+        font-size: .6rem;
+
+        @media(min-width: 1024px){
+            font-size: .9rem;
+        }
+
+        @media(min-width: 1440px){
+            font-size: 1.23rem;
+            
+        }
+    }
+}
