@@ -379,7 +379,7 @@ main{
 
     .summary div{
         width: min(4vw , 5.4rem);
-        border-radius: 1vw;
+        border-radius: .3rem;
     }
 
     .summary p{
