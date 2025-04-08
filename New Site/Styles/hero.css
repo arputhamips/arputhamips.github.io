@@ -188,7 +188,11 @@ main{
         opacity: .25;
 
         /* border: 1px solid white; */
-       
+    }
+
+    .name-block h3:hover{
+        opacity: .8;
+        font-size: min(2.2vw , 3.8rem);
     }
     
 }
