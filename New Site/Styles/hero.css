@@ -7,10 +7,16 @@ main{
 
 
 
-/* .hero{
-     border: 1px solid white; 
-} /*
+.hero{
+     /* border: 1px solid white;  */
+        /* position: absolute;border: 1px solid white; */
+        top: 0;
+     /* overflow: hidden; */
+} 
 
+.hero img{
+    /* border: 1px solid white; */
+}
 
 
 /* ----------------------- */
@@ -41,10 +47,12 @@ main{
     position: absolute;
     top: 10%;
     left: 5%;
-    width: 85vw;
+    width: 90vw;
+    height: 30vw;
 
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: left;
 
     font-family: code_mono;
@@ -59,6 +67,7 @@ main{
     font-weight: 380;
     opacity: .5;
     line-height: 4.2vw;
+    
 
 
     /* border: 1px solid white; */
@@ -71,6 +80,7 @@ main{
     line-height: 7vw;
 
     padding: .4rem 4.6vw;
+    flex-grow: 2;
 
     /* border: 1px solid white; */
 }
@@ -78,6 +88,20 @@ main{
 #initials{
     font-size: 4vw;
     letter-spacing: 8vw;
+}
+
+.name-block h3{
+    padding: .8rem;
+    font-size: 1.2rem;
+    text-align: center;
+    opacity: .4;
+
+    /* border: 1px solid white; */
+}
+
+.name-block h3:hover{
+    opacity: .8;
+    font-size: 1.6rem;
 }
 
 /* ----DESKTOP FORMATTING---- */
@@ -156,8 +180,8 @@ main{
     position: absolute;
     overflow: hidden;
     /* width: 120%; */
-    left: -20%;
-    top: 22%;
+    /* left: -20%; */
+    top: 22.5%;
 
     
     display: flex;
@@ -167,13 +191,14 @@ main{
     z-index: 1;
 
     padding-bottom: 1rem;
+
     /* border: 1px solid white; */
 }
 
 .nirmal .mobile-img{
     /* position: relative; */
-    width: 60%; 
-    /* left: -17%; */
+    width: 50%; 
+    filter: drop-shadow(-6px 6px 5px rgba(0,0,0,.03));
 
     /* border: 1px solid white; */
 }
@@ -182,7 +207,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    width: 35%;
+    width: 45%;
 
     padding-left: 1rem;
     
