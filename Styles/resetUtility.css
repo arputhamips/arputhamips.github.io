@@ -61,7 +61,21 @@
     font-family: code;
     src: url(/Assets/NewAssets/Fonts/CascadiaCode.ttf) format(truetype);
 }
+
+@font-face {
+    font-family: tt_year;
+    src: url(/Assets/NewAssets/Fonts/TT\ Mussels\ Trial\ Bold.otf) format(opentype);
+}
  
+@font-face {
+    font-family: tt_cap;
+    src: url(/Assets/NewAssets/Fonts/TT\ Mussels\ Trial\ DemiBold.otf) format(opentype);
+}
+
+@font-face {
+    font-family: tt_subcap;
+    src: url(/Assets/NewAssets/Fonts/TT\ Mussels\ Trial\ Medium\ Italic.otf) format(opentype);
+}
 
 /* HTML RESET */
 *{

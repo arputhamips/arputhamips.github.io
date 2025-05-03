@@ -425,3 +425,145 @@ main{
     }
 
 }
+
+
+/* ------------------*/
+/*---- TIMELINE_---- */
+/* ------------------*/
+
+/* DESKTOP FORMATTING */
+
+.timeline-wrapper{
+    /* border: 1px solid white; */
+    width: min(85vw,2300px);
+    margin:auto;
+}
+
+.timeline-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    /* background-color:black; */
+    /* padding:.5rem; */
+    margin-top:2rem;
+  }
+  
+  .timeline{
+    display: flex;
+  /*   gap: .2rem; */
+  }
+  
+  article:first-child>div{
+  /*   border: 1px solid black; */
+    min-height: 10px;
+    flex: 1;
+    
+    display: flex;
+    flex-direction:column;
+    margin-right: 5px;
+  }
+  
+  .yearblock{
+  /*   border: 1px solid green; */
+    display: flex;
+  /*   flex:1; */
+    margin-bottom: 4px;
+  }
+  
+  .caution{
+  /*   border: 1px solid red; */
+    flex: 1;
+    
+    background-image: repeating-linear-gradient(
+      -49deg,
+      #fff,
+      #fff 5px,
+      #00000000 0px,
+      #00000000 10px
+    );
+  }
+  
+  .year{
+    padding-left: 5px;
+    color:white;
+  /*   border:1px solid red; */
+    font-size: 14px;
+    font-weight:bold;
+    display:grid;
+    font-family: tt_year;
+  }
+  
+  .line{
+  /*   border: 1px solid yellow; */
+    min-height:8px;
+    background-color:white;
+  }
+  
+  .work>div{
+  /*   border:1px solid red; */
+    min-height:10px;
+    margin-right:8px;
+  }
+  
+  .work{
+    display:grid;
+    grid-template-columns: repeat(14,1fr);  
+  }
+  
+  .work>div>p{
+    font-family:tt_cap;
+    font-size: .8rem;
+    font-weight:800; 
+    margin-block:0;
+    padding-block: .15rem;
+  /*   border:1px solid green; */
+  }
+  
+  .work>div>p>i{
+    font-style: normal;
+    font-family: tt_subcap;
+    font-size:0.7rem;
+  }
+  
+  .work>div:first-child{
+    grid-column-start:2;
+    grid-column-end:10;
+    color:#f9b452;
+  }
+  
+  .work>div:nth-child(2){
+    grid-column-start:10;
+    grid-column-end:12;
+    color:#52dff9;
+  }
+  
+  .work>div:last-child{
+    grid-column-start:12;
+    grid-column-end:14;
+    color:#f95252;
+    
+  }
+  
+  .workline{
+    height:8px;
+  /*   border:1px solid red; */
+  }
+  
+  .work>div:first-child>.workline{
+    background-color:#f9b452;
+  }
+  
+  .work>div:nth-child(2)>.workline{
+    background-color:#52dff9;
+  }
+  
+  .work>div:last-child>.workline{
+    background-color:#f95252;
+  }
+  
+  .work>div:last-child>p{
+    white-space:nowrap;
+    
+  }
+  
+
