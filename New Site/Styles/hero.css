@@ -489,8 +489,8 @@ main{
   /*   border:1px solid red; */
     font-size: 14px;
     font-weight:bold;
-    display:grid;
-    font-family: tt_year;
+    /* display:grid; */
+    font-family: tt_year,monospace;
   }
   
   .line{
@@ -511,7 +511,7 @@ main{
   }
   
   .work>div>p{
-    font-family:tt_cap;
+    font-family:tt_cap, code;
     font-size: .8rem;
     font-weight:800; 
     margin-block:0;
@@ -521,7 +521,7 @@ main{
   
   .work>div>p>i{
     font-style: normal;
-    font-family: tt_subcap;
+    font-family: tt_subcap, code_mono;
     font-size:0.7rem;
   }
   
