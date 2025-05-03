@@ -64,17 +64,17 @@
 
 @font-face {
     font-family: tt_year;
-    src: url(/Assets/NewAssets/Fonts/TT\ Mussels\ Trial\ Bold.otf) format(opentype);
+    src: url(/Assets/NewAssets/Fonts/TT-Bold.otf) format(opentype);
 }
  
 @font-face {
     font-family: tt_cap;
-    src: url(/Assets/NewAssets/Fonts/TT\ Mussels\ Trial\ DemiBold.otf) format(opentype);
+    src: url(/Assets/NewAssets/Fonts/TT-DemiBold.otf) format(opentype);
 }
 
 @font-face {
     font-family: tt_subcap;
-    src: url(/Assets/NewAssets/Fonts/TT\ Mussels\ Trial\ Medium\ Italic.otf) format(opentype);
+    src: url(/Assets/NewAssets/Fonts/TT-Medium-Italic.otf) format(opentype);
 }
 
 /* HTML RESET */
