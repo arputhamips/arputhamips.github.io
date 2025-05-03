@@ -402,8 +402,8 @@ main{
 @media screen and (min-width: 640px) {
 
     .about{
-        width: min(75vw , 2200px);
-        padding: 0 2vw ;
+        width: min(80vw , 2250px);
+        padding: 0 ;
     }
 
 
@@ -435,7 +435,7 @@ main{
 
 .timeline-wrapper{
     /* border: 1px solid white; */
-    width: min(85vw,2300px);
+    width: min(80vw,2250px);
     margin:auto;
 }
 
@@ -454,7 +454,7 @@ main{
   }
   
   article:first-child>div{
-  /*   border: 1px solid black; */
+    /* border: 1px solid red; */
     min-height: 10px;
     flex: 1;
     
@@ -462,9 +462,15 @@ main{
     flex-direction:column;
     margin-right: 5px;
   }
+
+  article:first-child>div:hover, article:first-child>div:focus-within{
+    scale: 110%;
+    padding-inline: .5rem;
+
+  }
   
   .yearblock{
-  /*   border: 1px solid green; */
+    /* border: 1px solid green; */
     display: flex;
   /*   flex:1; */
     margin-bottom: 4px;
@@ -564,6 +570,12 @@ main{
   .work>div:last-child>p{
     white-space:nowrap;
     
+  }
+
+  .workline:hover, .workline:focus-within{
+    /* border:2px solid red; */
+    height: 11px;
+
   }
   
 
