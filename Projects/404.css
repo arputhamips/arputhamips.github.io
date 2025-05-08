@@ -1,0 +1,115 @@
+@font-face {
+    font-family: lost;
+    src: url(/Assets/Fonts/The\ Lost\ Dungeon.ttf);
+}
+
+
+body{
+    background-color: var(--p_white);
+    overflow: hidden;
+}
+
+
+.header{
+    padding:2rem;
+    color: var(--p_black);
+}
+
+.header h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: lemon_m;
+    font-weight: 200;
+    opacity: .6;
+}
+
+
+.carosel{
+    margin: auto;
+    width: min(75vw,800px);
+    padding: 1rem;
+    padding-block: 2rem;
+    background-color: transparent;
+    display: flex;
+    border-radius: 10px;
+    /* gap: .8rem; */
+    justify-content: space-between;
+    /* padding-top: 3rem; */
+    position: relative;
+    overflow: hidden;
+
+
+    /* border: 2px solid red; */
+}
+
+.carosel::before{
+    content: '';
+    border-radius: 10px;
+    background-image: url(/Assets/preview_1080p.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: brightness(1.7) blur(60px) saturate(.2);
+
+}
+
+.carosel div{
+    /* border: 2px solid cyan; */
+    height: 30%;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px #00000041;
+    position: relative;
+    
+
+    display: grid;
+    place-content: center;
+}
+
+.carosel div::before{
+    content: "";
+    border-radius: 5px;
+    background-image: url(/Assets/Img/vecteezy_abstract-blurred-color-gradient-background_6415042.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    filter: brightness(.7);
+
+    /* border: 5px solid white; */
+}
+
+.carosel div h2{
+    z-index: 2;
+    padding-block: 3.8vw;
+}
+
+.vanga{
+    color: var(--p_black);
+}
+
+.vanga h2{
+    font-family: lost;
+    text-align: center;
+    /* padding-block: .3rem; */
+    opacity: .2;
+
+}
+
+.vanga h2:first-child{
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.vanga h2:last-child{
+    font-size: 4.6rem;
+    padding-top: 1.5rem;
+    color: var(--red);
+}
