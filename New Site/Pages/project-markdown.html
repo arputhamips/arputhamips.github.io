@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Details</title>
+  <link rel="stylesheet" href="/Styles/resetUtility.css">
+  <link rel="stylesheet" href="/New Site/Styles/nav.css">
+  <link rel="stylesheet" href="/New Site/Styles/hero.css">
+  <style>
+        .markdown-body {
+    max-width: 1300px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.6;
+    background-color: transparent; /* match rest of site */
+    color: white; /* use white for dark theme */
+    }
+    .markdown-body h1, 
+    .markdown-body h2, 
+    .markdown-body h3, 
+    .markdown-body h4 {
+    color: white;
+    margin-top: 2rem;
+    }
+
+    .markdown-body a {
+    color: #ffa500; /* orange link color */
+    text-decoration: underline;
+    }
+
+    .markdown-body pre {
+    background: #111;
+    color: #eee;
+    padding: 1rem;
+    overflow-x: auto;
+    }
+
+    .markdown-body code {
+    background: #222;
+    color: #fffbcc;
+    padding: 2px 4px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="bg-blur-nav">
+      <div class="width-lock">
+        <h1>&lt;/NIRMAL&nbsp;<span id="ajla">AJLA</span>&gt;</h1>
+        <button class="menu-button" id="menu-btn" onclick="ToggleNav()"><i id="btn-icon" class="fa-solid fa-bars"></i></button>
+        <ul class="desktop-nav">
+          <li><a href="index.html#footer">CONTACT</a></li>
+          <li><a href="index.html#works">WORKS</a></li>
+          <li><a href="index.html#i-am">ABOUT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div id="page-header" style="max-width: 1300px; margin: 6rem auto 2rem; padding: 0 1rem; color: white;">
+    <h1 id="project-title" style="font-size: 2rem; font-weight: bold;"></h1>
+    <p id="project-date" style="color: gray; font-size: 0.9rem; margin-top: 0.25rem;"></p>
+  </div>
+  <div id="markdown-content" class="markdown-body">Loading project details...</div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+<script>
+  const md = window.markdownit();
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const fileName = urlParams.get('file');
+
+  function parseFrontMatter(content) {
+    const match = content.match(/^---\s*\n([\s\S]+?)\n---\s*\n([\s\S]*)$/);
+    if (match) {
+      const metaLines = match[1].split('\n');
+      const metadata = {};
+      metaLines.forEach(line => {
+        const [key, ...rest] = line.split(':');
+        metadata[key.trim()] = rest.join(':').trim();
+      });
+      return { metadata, body: match[2] };
+    }
+    return { metadata: {}, body: content };
+  }
+
+  if (!fileName) {
+    document.getElementById("markdown-content").innerText = "Error: No project file specified.";
+  } else {
+    fetch(`/Projects/${fileName}`)
+      .then(res => res.ok ? res.text() : Promise.reject("Failed to load markdown"))
+      .then(text => {
+        const { metadata, body } = parseFrontMatter(text);
+        document.getElementById("project-title").innerText = metadata.title || '';
+        document.getElementById("project-date").innerText = metadata.date || '';
+        const htmlContent = md.render(body);
+        document.getElementById("markdown-content").innerHTML = htmlContent;
+      })
+      .catch(err => {
+        document.getElementById("markdown-content").innerText = "Could not load project details.";
+        console.error(err);
+      });
+  }
+</script>
+
+<script async src="https://kit.fontawesome.com/f32f1dfc0f.js" crossorigin="anonymous"></script>
+<script src="/New Site/JS/nav.js"></script>
+</body>
+</html>

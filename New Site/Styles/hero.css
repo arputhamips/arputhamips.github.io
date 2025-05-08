@@ -199,6 +199,13 @@ main{
 
 
 
+
+
+
+
+
+
+
 /* ----------------------- */
 /*------IMAGE BLOCK -------*/
 /* ----------------------- */
@@ -360,6 +367,13 @@ main{
 
 
 
+
+
+
+
+
+
+
 /* ------------------*/
 /*---- ABOUT ME---- */
 /* ------------------*/
@@ -373,11 +387,11 @@ main{
     /* border: 1px solid wheat; */
 }
 
-.about > h2{
+.about h2{
     font-family: code;
     font-size: 1.3rem;
     color: var(--primary_accent);
-    letter-spacing: .7rem;
+    letter-spacing: .5rem;
     padding: 3vw 0;
 
 }
@@ -425,6 +439,14 @@ main{
     }
 
 }
+
+
+
+
+
+
+
+
 
 
 /* ------------------*/
@@ -725,10 +747,32 @@ main{
   
   .mob-work>div:nth-child(3)>p{
     color:#f95252;
-  }
-
- 
-    
+  }  
   }
   
+
+
+
+
+
+
+
+
+/* --------------------*/
+/*---- MY PROJECTS---- */
+/* --------------------*/
+
+.projects{
+  width: 90vw;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.projects h2{
+  font-family: code;
+  color: var(--primary_accent);
+  font-size: 1.3rem;
+  letter-spacing: .5rem;;
+  padding: 3vw 0;
+}
 
