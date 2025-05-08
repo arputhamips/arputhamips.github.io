@@ -411,6 +411,19 @@ main{
     display: none;
 }
 
+.about>p>a{
+  opacity: 0.8;
+  /* border: solid 1px white; */
+  display: block;
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  cursor: grab;
+}
+
+.about>p>a:hover{
+  text-decoration: underline;
+
+}
 
 
 
