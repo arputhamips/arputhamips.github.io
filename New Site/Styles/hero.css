@@ -479,7 +479,7 @@ main{
   /*   gap: .2rem; */
   }
   
-  article:first-child>div{
+  .timeline-wrapper article:first-child>div{
     /* border: 1px solid red; */
     min-height: 10px;
     flex: 1;
@@ -489,7 +489,7 @@ main{
     margin-right: 5px;
   }
 
-  article:first-child>div:hover, article:first-child>div:focus-within{
+  .timeline-wrapper article:first-child>div:hover,.timeline-wrapper article:first-child>div:focus-within{
     scale: 110%;
     padding-inline: .5rem;
 
@@ -762,6 +762,10 @@ main{
 /*---- MY PROJECTS---- */
 /* --------------------*/
 
+
+/* MOBILE FORMATTING */
+
+
 .projects{
   width: 90vw;
   margin: auto;
@@ -776,3 +780,130 @@ main{
   padding: 3vw 0;
 }
 
+
+
+
+
+.carousel{
+  /*   border: solid 1px white; */
+    max-width: 90vw;
+    margin:auto;  
+    
+    display:grid;
+    gap:.5rem;
+  }
+  
+  .carousel article{
+    position:relative;
+    border-radius:10px;
+    overflow:clip;
+    background-color: #222222;
+  }
+  
+  .carousel img{
+    object-fit: cover;
+    height:100%;
+    max-width:32vw;
+  }
+  
+  
+  .carousel article{
+    display:flex;
+    gap:1rem;
+    
+  }
+  
+  .desc-block{
+    align-content:center;
+  }
+  
+  .desc-block h3{
+    margin-bottom:0.3rem;
+    font-family:code;
+    
+  }
+  
+  .desc-block .desktop-sub{ 
+    display:none;
+    
+  }
+
+
+
+  /* DESKTOP-FORMATTING */
+  
+  
+  @media screen and (min-width: 640px){
+    .projects{
+      width: min(80vw, 2250px);
+    }
+    .projects h2{
+      padding: 1vw 0;
+      font-size: min(1.8vw,2.5rem);
+    }
+    
+    .carousel{
+    max-width: min(1800px,85vw);
+    margin:auto;  
+    
+    display:grid;
+  /*   grid-auto-flow: row; */
+    grid-template-columns:1fr 1fr;
+    gap:1rem;
+      
+      @media (min-width: 1400px){
+        grid-template-columns:1fr 1fr 1fr;
+      }
+  }
+  
+    .img-block{
+      width:100%;
+      transition: all 0.2s ease;
+  /*     border:solid 1px red; */
+    }
+  .carousel img{
+  /*   border:solid 4px green; */
+    max-width:100%;
+  
+  }
+    
+  
+    
+  .desc-block{
+    position: absolute;
+    top:0;
+    padding:1.5rem;
+    text-align:justify;
+    height:100%;
+    opacity:0;
+    transition: all 0.4s ease;
+  /*   border:solid 1px red; */
+  }
+
+  .desc-block h3{
+    font-size:1.7rem;
+  }
+   
+    .carousel article:hover{
+      box-shadow: 5px 5px #bbbbbb;
+  }  
+    
+   .carousel article:hover .desc-block{
+      opacity: 1;
+  }
+  
+   .carousel article:hover .img-block{
+      filter: blur(4px);
+      filter: brightness(50%);
+  }
+    
+  .desc-block .desktop-sub{ 
+    display:block;
+  }
+    
+   .desc-block .mobile-sub{ 
+    display:none;
+  }
+    
+  }
+  
