@@ -425,6 +425,10 @@ main{
 
 }
 
+#design{
+  margin-top: 1.5rem;;
+}
+
 
 
 
@@ -634,7 +638,7 @@ main{
     grid-template-columns: min-content auto;
     width:fit-content;
     gap:6px;
-    margin:auto;
+    margin-left:10vw;
     /* background-color:black; */
     /* border:solid 1px red; */
   }
@@ -651,7 +655,7 @@ main{
   
   .mobile-timeline-wrapper .mob-timeline>div{
     /* border: 1px solid white; */
-    min-height: 120px;
+    min-height: 95px;
     display:flex;
     flex-direction: row;
     gap:8px;
@@ -894,6 +898,7 @@ main{
     height:100%;
     opacity:0;
     transition: all 0.4s ease;
+    color: whitesmoke;
   /*   border:solid 1px red; */
   }
 
@@ -902,7 +907,8 @@ main{
   }
    
     .carousel article:hover{
-      box-shadow: 5px 5px #bbbbbb;
+      /* box-shadow: 5px 5px #bbbbbb22; */
+      outline: 4px solid #f5f5f599;
   }  
     
    .carousel article:hover .desc-block{
@@ -910,8 +916,13 @@ main{
   }
   
    .carousel article:hover .img-block{
-      filter: blur(4px);
-      filter: brightness(50%);
+      /* backdrop-filter: blur(40px); */
+      filter: brightness(30%);
+      
+  }
+
+  .carousel article:hover img{
+    filter: blur(3px);
   }
     
   .desc-block .desktop-sub{ 
