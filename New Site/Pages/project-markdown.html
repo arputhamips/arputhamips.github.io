@@ -6,43 +6,7 @@
   <title>Project Details</title>
   <link rel="stylesheet" href="/Styles/resetUtility.css">
   <link rel="stylesheet" href="/New Site/Styles/nav.css">
-  <link rel="stylesheet" href="/New Site/Styles/hero.css">
-  <style>
-        .markdown-body {
-    max-width: 1300px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    font-family: "Segoe UI", sans-serif;
-    line-height: 1.6;
-    background-color: transparent; /* match rest of site */
-    color: white; /* use white for dark theme */
-    }
-    .markdown-body h1, 
-    .markdown-body h2, 
-    .markdown-body h3, 
-    .markdown-body h4 {
-    color: white;
-    margin-top: 2rem;
-    }
-
-    .markdown-body a {
-    color: #ffa500; /* orange link color */
-    text-decoration: underline;
-    }
-
-    .markdown-body pre {
-    background: #111;
-    color: #eee;
-    padding: 1rem;
-    overflow-x: auto;
-    }
-
-    .markdown-body code {
-    background: #222;
-    color: #fffbcc;
-    padding: 2px 4px;
-    }
-  </style>
+  <link rel="stylesheet" href="/New Site/Styles/projectpage.css">
 </head>
 <body>
 
@@ -71,8 +35,12 @@
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markdown-it-container/dist/markdown-it-container.min.js"></script>
 <script>
   const md = window.markdownit();
+  md.use(window.markdownitContainer, 'note')
+    .use(window.markdownitContainer, 'warning')
+    .use(window.markdownitContainer, 'row');
 
   const urlParams = new URLSearchParams(window.location.search);
   const fileName = urlParams.get('file');
