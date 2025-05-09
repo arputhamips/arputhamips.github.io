@@ -1069,7 +1069,7 @@ main{
 }
 
 .catogery h3{
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-family: code_mono;
   text-align: center;
   padding:  0 1rem;
@@ -1108,11 +1108,11 @@ main{
   }
 
   .catogery h3{
-    font-size: min(1.8vw, 2.5rem);
+    font-size: min(1.39vw, 1.4rem);
   }
 
   .catogery li{
-    font-size: min(1.39vw, 2rem);
+    font-size: min(1.39vw, 1rem);
   }
 
 }
