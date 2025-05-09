@@ -30,25 +30,26 @@ AgriBot is a **multi-action autonomous agricultural robot** capable of performin
 
 ### Tillage
 
-![Disc Harrow CAD](/Assets/Projects/agribot/parts.jpg)
+![Disc Harrow CAD](/Assets/Projects/agribot/till.png)
 
 The front-mounted **disc harrow** breaks up compacted soil and prepares the bed for planting.
 
 ### Ploughing
 
-![Plough CAD](/Assets/Projects/agribot/laser-cut-draft.png)
+![Plough CAD](/Assets/Projects/agribot/plough.png)
 
 A **central claw plough tool** follows the harrow to aerate and turn over soil. Constructed from heavy metal for high durability.
 
 ### Seeding
 
-![Seeder CAD](/Assets/Projects/agribot/assembled.png)
+![Seeder CAD](/Assets/Projects/agribot/seeder.png)
 
 A rotary dibbler-style seeder places seeds at consistent depth and spacing. Accurate furrow creation leads to improved germination rates.
 
 ### Irrigation
 
 An integrated **25L irrigation tank** and nozzle array hydrates each seed location after sowing. Operated automatically in tandem with GPS-based path following.
+![before drivetrain Prototype](/Assets/Projects/agribot/full-assy.png)
 
 ---
 
@@ -57,7 +58,7 @@ An integrated **25L irrigation tank** and nozzle array hydrates each seed locati
 ### CAD + Mechanical Design
 
 :::row
-![Full CAD Model](/Assets/Projects/agribot/assembled.png)
+![Full CAD parts](/Assets/Projects/agribot/parts.jpg)
 ![Wheel Hub](/Assets/Projects/agribot/wheel-hub.png)
 :::
 
@@ -67,6 +68,8 @@ We modeled all structural and mounting components in SolidWorks. Key mechanical 
 - Custom B-frame design with 1” and 2.5” MS tubes
 - Wheel hubs laser-cut from 4mm steel, press-fitted and welded
 
+
+![full Prototype](/Assets/Projects/agribot/full-proto.png)
 ---
 
 ##  Powertrain & IoT System

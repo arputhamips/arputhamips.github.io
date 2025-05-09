@@ -218,3 +218,104 @@ nav ul li a {
 
 }
 
+
+
+
+/* FOOTER */
+.contact{
+    color: var(--p_white);
+    text-align: left;
+    margin: auto;
+    background-color: rgb(39, 39, 39);
+    /* padding: 1rem; */
+
+
+    /* border: 2px solid white; */
+    
+}
+
+.widthcontainer{
+    margin: auto;
+    width: min(80vw, 2250px);
+
+}
+
+
+footer h2{
+    font-family: code;
+    font-size: min(1.8vw, 2.5rem);
+    
+    padding: 1rem 0rem;
+    padding-top: 1.7rem;
+
+    /* border: 2px solid white; */
+}
+
+.wrapper{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    /* padding-bottom: 1.5rem; */
+    flex-flow: column nowrap;
+
+    /* border: 2px solid white; */
+}
+
+.wrapper quote{
+    font-family: trinco;
+    padding: 1rem;
+    font-size: 1rem;
+    padding-top: 2rem;
+    
+
+    /* border: 2px solid white; */
+}
+
+.con-card  {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    padding: .3rem;
+    align-items: center;
+}
+
+.con-card i{
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+.cpywrit{
+    display: block;
+    text-align: center;
+    font-family: louis;
+    font-size: .9rem;
+    padding-block: 1rem;
+
+    opacity: 0.5;
+}
+
+@media screen and (min-width:560px) {
+
+    footer h2{
+        letter-spacing: 10px;
+        
+    }
+
+    .wrapper{
+        flex-flow: row nowrap;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .wrapper quote{
+        padding-top: .5rem;
+        line-height: 24px;
+    }
+
+    
+
+    
+}
+
+/* END FOOTER */
+
