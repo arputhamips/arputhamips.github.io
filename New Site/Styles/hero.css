@@ -416,7 +416,7 @@ main{
   /* border: solid 1px white; */
   display: block;
   padding-top: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   cursor: grab;
 }
 
@@ -453,6 +453,10 @@ main{
         font-size: min(1.39vw,2rem);
         line-height: min(1.75vw,2.8rem);
         text-align: justify;
+    }
+
+    .about>p>a{
+      font-size: min(1.39vw,2rem);
     }
 
     .about > p > span{
@@ -888,7 +892,9 @@ main{
   
   }
     
-  
+  .carousel article{
+    outline:3px solid #f5f5f511;
+  }
     
   .desc-block{
     position: absolute;
