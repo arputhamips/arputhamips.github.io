@@ -3,183 +3,358 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JHON LEONARD ARPUTHA</title>
-  <link rel="shortcut icon" href="Assets/Img/Ajla_Logo.png" type="image/x-icon">
+  <title>NIRMAL A J L A</title>
+  <link rel="shortcut icon" href="/Assets/Img/Ajla_Logo.png" type="image/x-icon">
   <link rel="stylesheet" href="/Styles/resetUtility.css">
-  <link rel="stylesheet" href="/Styles/header.css">
-  <link href='/Styles/style.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/New%20Site/Styles/nav.css">
+  <link rel="stylesheet" href="/New%20Site/Styles/hero.css">
+  
 </head>
 
 <body>
-  
-  <header class="header">
-    <div class="mob-header">
-      <h1 class="title"><a href="#">NIRMAL A J L A</a></h1>
-      <button class="menu-button" id="menu-btn"><i class="fa-solid fa-bars"></i></button>
-    </div>
-    <div class="nav" id="nav-bar">
-        <a id="nav-ele1" onclick="closeNav()" href="#footer">CONTACT</a>
-        <a id="nav-ele2" onclick="closeNav()" href="#works">WORKS</a>
-        <a id="nav-ele3" onclick="closeNav()" href="#i-am">ABOUT</a>
-    </div>
+
+  <header>
+    <nav class="nav">
+      <div class="bg-blur-nav">
+        <div class="width-lock">
+          <h1>&lt;/NIRMAL&nbsp;<span id="ajla">AJLA</span>&gt;</h1>
+          <button class="menu-button" id="menu-btn" onclick="ToggleNav()"><i id="btn-icon" class="fa-solid fa-bars"></i></button>
+          <ul class="desktop-nav">
+            <li><a href="#footer">CONTACT</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#i-am">ABOUT</a></li>
+          </ul>
+        </div>
+     </div>
+      <ul class="nav-links" id="navlinks">
+        <li><a id="nav-ele1" onclick="ToggleNav()" href="#">CONTACT</a></li>
+        <li><a id="nav-ele2" onclick="ToggleNav()" href="#projects">WORKS</a></li>
+        <li><a id="nav-ele3" onclick="ToggleNav()" href="#about">ABOUT</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="hero">
-    <img src="Assets/Img/Hero_Bg2.png" alt="" class="bg-hero" width="1240" height="580">
-    <img src="Assets/Img/Hero_Bg_mob.png" alt="" class="mob-bg-hero" width="430" height="626">
-    <article class="hero-name-block">
-      <p>I'm</p>
-      <h2 id="name"></h2>
-      <p class="hero-desc">Video Producer <span class="nodec">|</span> Director <span class="nodec">|</span> Editor <span class="nodec">|</span> Graphic Designer </p>
-    </article>
-    <img src="Assets/Img/NIRMAL.png" alt="" class="hero-img" width="426" height="649">
-    <img src="Assets/Img/NIRMAL_mob.png" alt="" class="mob-hero-img" width="924" height="2013">
-    <p class="watermark">Port_Folio</p>
-  </section>
-
-  <section class="who">
-    <img src="Assets/Img/whoAmI_Bg2.png" alt="" class="who-bg" height="343" width="1240">
-    <h2 id="i-am">I'm a</h2>
-    <div class="pellets">
-      <div class="row1">
-        <ul>
-          <li><a href="/New Site/Pages/hero.html">VIDEO PRODUCER</a></li>
-          <li><a href="/New Site/Pages/project-markdown.html?file=test.md">FILM MAKER</a></li>
-          <li><a href="/Pages/shortFilms.html">DIRECTOR</a></li>
-        </ul>
-      </div>
-      <div class="row2">
-        <ul>
-          <li><a href="/Pages/shortFilms.html">VFX GENERALIST</a></li>
-          <li> <a href="/Pages/mechanical.html">MECHANICAL ENGINEER</a></li>
-          <li><a href="/Pages/shortFilms.html">VIDEO EDITOR</a></li>
-        </ul>
-      </div>
-      <div class="row3">
-        <ul>
-          <li><a href="/Pages/designs.html">GRAPHIC DESIGNER</a></li>
-          <li><a href="#works">MUSIC PRODUCER</a></li>
-          <li><a href="#works">UI/UX DESIGNER</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="quote">
-    <div class="quote-container">
-      <div id="quote-article">
-        <div class="quote-deco"></div>
-        <quote>I'm <span class="bold">Anything</span> you want me to be...<br>I'm <span class="bold">Everything</span> you need me to be...</quote>
-      </div>
-      <img src="Assets/Img/Ajla_Logo.png" alt="" class="ajla-logo" height="50" width="55">
-    </div>
-  </section>
-
-  <section id="works" class="works">
-    <article class="works-head width">
-      <div class="deco"></div>
-      <h2>MY WORKS</h2>
-    </article>
-    <div class="carosel width">
-      <a href="/Pages/shortFilms.html">
-        
-          <img width="1024" height="576" src="/Assets/Img/chip_bg.jpg" alt="">
-          <i class="fa-solid fa-film"></i>
-          <p>SHORT FILMS</p>
-        
-      </a>
-      <a href="/Pages/designs.html">
-        
-          <img width="1024" height="576" src="/Assets/Img/chip_bg.jpg" alt="">
-          <i class="fa-solid fa-pen-nib"></i>
-          <p>GRAPHIC DESIGN</p>
-        
-      </a>
-      <a href="/Pages/mechanical.html">
-        
-          <img width="1024" height="576" src="/Assets/Img/chip_bg.jpg" alt="">
-          <i class="fa-solid fa-wrench"></i>
-          <p>ENGINEERING</p>
-        
-      </a>
-    </div>
-
-  </section>
-
-  <section class="education">
-    <h2 class="width" id="edu">EDUCATION & EXPERIENCE</h2>
-    <div class="all-e  width">
-      
-      <article class=" card edu1">
-        <div class="edu-dec"></div>
-        <div class="info">
-          <p class="edu-head">FILM MAKER</p>
-          <p class="edu-sub">Producer & Director</p>
-          <p class="edu-desc"><a href="https://www.youtube.com/@MADURAITAMIZHAR" target="_blank">Youtube Channel</a></p>
+  <main>
+    <section class="hero">
+      <img id="hero-bg" class="desktop-img" src="/Assets/NewAssets/Img/BG_desktop.jpg" alt="" width="1920" height="900">
+      <img class="mobile-img" src="/Assets/NewAssets/Img/BG_mobile.jpg" alt="" width="1080" height="1530">
+      <article class="name-block">
+        <h2>//HI<br/>//MY NAME IS</h2>
+        <h1>NIRMAL<br/><span id="initials">AJLA</span></h1>
+        <div class="header-links">
+          <h3><a target="_blank" href="https://www.linkedin.com/in/nirmal-a-j-l-a-98765a172/"><i class="fa-brands fa-linkedin-in"></i></a></h3>
+          <h3><a target="_blank" href="https://www.youtube.com/@MADURAITAMIZHAR"><i class="fa-brands fa-youtube"></i></a></i></h3>
+          <h3><a target="_blank" href="https://medium.com/@nirmalezhil21"><i class="fa-brands fa-medium"></i></a></h3>
+          <h3><a target="_blank" href="https://www.instagram.com/nirmalezhil21"><i class="fa-brands fa-instagram"></i></a></h3>
         </div>
       </article>
-
-      <article class="card edu2">
-        <div class="edu-dec"></div>
-        <div class="info">
-          <p class="edu-head">STUDENT DIRECTOR</p>
-          <p class="edu-sub">CEG Tech Forum [Design]</p>
-          <p class="edu-desc">Head of Design Team</p>
+      <article class="nirmal">
+        <img src="/Assets/NewAssets/Img/Nirmal_Hero_HighRes.png" alt="" height="1035" width="921" class="desktop-img">
+        <img src="/Assets/NewAssets/Img/Nirmal_Hero_NormalRes.png" alt="" height="703" width="428" class="mobile-img">
+        <div class="description">
+          <ul>
+            <li>Mechanical Engineer</li>
+            <li>Robotics & Automation</li>
+            <li>Expertise in Haptics</li>
+            <li>IOT Systems</li>
+            <li>Sensor Modelling</li>
+            <li>Product Design</li>
+          </ul>
         </div>
       </article>
+    </section>
+    
+    <section class="about" id="about">
+      <h2>ABOUT ME</h2>
+      <p>
+        From autonomous drones to precision robotics and haptic devices, 
+        I design and build solutions that merge mechanical excellence with 
+        intelligent control. <span id="extended-summary">With a background in robotics, 
+          manufacturing optimization, and product development, I bring creativity, 
+          adaptability, and technical depth to every project.</span>
+        </p>
+    </section>
 
-      <article class="card edu3">
-        <div class="edu-dec"></div>
-        <div class="info">
-          <p class="edu-head">HEAD OF DESIGN</p>
-          <p class="edu-sub">National Service Scheme</p>
-          <p class="edu-desc">Marketing and Design</p>
+    <section class="timeline-wrapper">
+      <article class='timeline'>
+        <div>
+          <div class="yearblock"> 
+            <div class="caution"></div>
+            <div class="year">2019</div>
+          </div>
+          <div class="line"></div>
+        </div>
+        <div><div class="yearblock"> 
+            <div class="caution"></div>
+            <div class="year">2020</div>
+          </div>
+          <div class="line"></div></div>
+        <div><div class="yearblock"> 
+            <div class="caution"></div>
+            <div class="year">2022</div>
+          </div>
+          <div class="line"></div></div>
+        <div><div class="yearblock"> 
+            <div class="caution"></div>
+            <div class="year">2022</div>
+          </div>
+          <div class="line"></div></div>
+        <div><div class="yearblock"> 
+            <div class="caution"></div>
+            <div class="year">2023</div>
+          </div>
+          <div class="line"></div></div>
+        <div><div class="yearblock"> 
+            <div class="caution"></div>
+            <div class="year">2024</div>
+          </div>
+          <div class="line"></div></div>
+        <div><div class="yearblock"> 
+            <div class="caution"></div>
+            <div class="year">2025</div>
+          </div>
+          <div class="line"></div></div>
+       </article>
+      <article class='work'>
+        <div>
+          <div class="workline"></div>
+          <p>
+            B.E in Mechanical Engineering <br>
+            <i>CEG</i>
+          </p>
+        </div>
+          <div><div class="workline"></div>
+          <p>
+            Piping Engineer<br>
+            <i>Technip Energies</i>
+          </p>
+          </div>
+        <div>
+          <div class="workline"></div>
+          <p>
+            M.ENG in Mechanical<br>& Aerospace<br>
+            <i>Cornell University</i>
+          </p>
+        </div>
+       </article>
+    </section>
+
+    <section class="mobile-timeline-wrapper">
+      <article class='mob-timeline'>
+       <div>
+         <div class="yearblock">
+           <div class="year">20<br>19</div>
+           <div class="caution"></div>
+         </div>
+         <div class="line"></div>
+       </div>
+       <div><div class="yearblock">
+           <div class="year">20<br>20</div>
+           <div class="caution"></div>
+         </div>
+         <div class="line"></div>
+       </div>
+       <div>
+         <div class="yearblock">
+           <div class="year">20<br>21</div>
+           <div class="caution"></div>
+         </div>
+         <div class="line"></div>
+       </div>
+       <div>
+         <div class="yearblock">
+           <div class="year">20<br>22</div>
+           <div class="caution"></div>
+         </div>
+         <div class="line"></div>
+       </div>
+       <div>
+         <div class="yearblock">
+           <div class="year">20<br>23</div>
+           <div class="caution"></div>
+         </div>
+         <div class="line"></div>
+       </div>
+       <div>
+         <div class="yearblock">
+           <div class="year">20<br>24</div>
+           <div class="caution"></div>
+         </div>
+         <div class="line"></div>
+       </div>
+       <div>
+         <div class="yearblock">
+           <div class="year">20<br>25</div>
+           <div class="caution"></div>
+         </div>
+         <div class="line"></div>
+       </div>
+       </article>
+      <article class="mob-work">
+        <div>
+          <div class="workline"></div>
+          <p>B.E in Mechanical<br>Engineering <br><i>CEG</i></p>
+        </div>
+        <div>
+          <div class="workline"></div>
+          <p>Piping Engineer <br><i>Technip Energies</i></p>
+        </div>
+        <div>
+          <div class="workline"></div>
+          <p>M.ENG in Mechanical<br>& Aerospace<br><i>Cornell University</i></p>
         </div>
       </article>
+    </section>
 
-      <article class="card edu3">
-        <div class="edu-dec"></div>
-        <div class="info">
-          <p class="edu-head">BACHELOR OF ENGINEERING</p>
-          <p class="edu-sub">Mechanical Engineering</p>
-          <p class="edu-desc">Anna University, Chennai</p>
-        </div>
+    <section class="about">
+      <p id="design">
+        Apart from being an Engineer, I'm also an avid Film Maker, Graphic Designer and a Photographer! <br>
+       <a href="/designPortfolio.html">//Click to take a look at my Design Portfolio!</a>
+      </p>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>MY PROJECTS</h2>
+      <div class="carousel">
+        <a href="/New Site/Pages/project-markdown.html?file=savipress.md"><article>
+          <div class="img-block">
+            <img src="/Assets/Projects/savipress/thumb.jpg" alt="savipress">
+          </div>
+          <div class="desc-block">
+            <h3>SAVIPress</h3>
+            <p class='mobile-sub'>Cornell University</p>
+            <p class='desktop-sub'><i>Cornell university</i><br><br>A Foot Massage Device with advanced functionality.</p>
+          </div>
+         </article></a>
+        <a href="/New Site/Pages/project-markdown.html?file=spinwheel.md"><article>
+          <div class="img-block">
+            <img src="/Assets/Projects/spinwheel/thumb.png" alt="spinwheel">
+          </div>
+          <div class="desc-block">
+            <h3>Spin Wheel</h3>
+            <p class='mobile-sub'>Cornell University</p>
+            <p class='desktop-sub'><i>Cornell University</i><br><br>A cheap high resolution Magnetic Encoder based Scrolling Device</p>
+          </div>
+         </article></a>
+        <a href="/New Site/Pages/project-markdown.html?file=agribot.md"><article>
+          <div class="img-block">
+            <img src="/Assets/Projects/agribot/thumb.png" alt="agribot">
+          </div>
+          <div class="desc-block">
+            <h3>Agri-Bot</h3>
+            <p class='mobile-sub'>CEG</p>
+            <p class='desktop-sub'><i>CEG</i><br><br>A rugged, GPS-guided farming robot for smart, multi-task crop care.</p>
+          </div>
+         </article></a>
+        <a href="/New Site/Pages/project-markdown.html?file=lidar.md"><article>
+          <div class="img-block">
+            <img src="/Assets/Projects/lidar/thumb.jpg" alt="Lidar">
+          </div>
+          <div class="desc-block">
+            <h3>Lidar Modelling</h3>
+            <p class='mobile-sub'>Cornell University</p>
+            <p class='desktop-sub'><i>Cornell University</i><br><br>Dynamic LiDAR Simulation for Fire Rescue Navigation</p>
+          </div>
+         </article></a>
+       </div>
+    </section>
+
+    <section class="links">
+      <h2>LINKS</h2>
+      <article class="link-block">
+        <a href="https://medium.com/@nirmalezhil21" target="_blank"><i class="fa-brands fa-medium"></i>My Blog</a>
+        <a href="https://www.linkedin.com/in/nirmal-a-j-l-a-98765a172/" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkdin</a>
+        <a href="/Assets/Resume/Resume.pdf" target="_blank"><i class="fa-solid fa-file-pdf"></i>Download Resume</a>
       </article>
+    </section>
 
-    </div>
-  </section>
-
-  <footer id="footer" class="contact width">
-    <h2>Don't be shy!</h2>
-
-    <div class="wrapper">
-
-      <div>
-        <article class="con-card insta">
-          <i class="fa-brands fa-instagram"></i>
-          <p><a target="_blank" href="https://www.instagram.com/nirmalezhil21/">@nirmalezhil21</a></p>
+    <section class="skills">
+      <h2>SKILLS</h2>
+      <div class="cat-wrapper">
+        <article class="catogery">
+          <h3>CAD & Simulation</h3>
+          <ul>
+            <li>SolidWorks</li>
+            <li>AutoCAD</li>
+            <li>Fusion 360</li>
+            <li>ANSYS (FEA)</li>
+            <li>Inventor</li>
+          </ul>
         </article>
 
-        <article class="con-card x">
-        <i class="fa-brands fa-x-twitter"></i>
-        <p><a target="_blank" href="https://x.com/nirmalezhil21?t=wu52VHcbYwX8XSVx6sZqNQ&s=09">@nirmalezhil21</a></p>
+        <article class="catogery">
+          <h3>Microcontrollers & IoT</h3>
+          <ul>
+            <li>Arduino</li>
+            <li>ESP32 / ESP8266</li>
+            <li>nRF52840</li>
+            <li>LoRaWAN</li>
+            <li>Bluetooth HID</li>
+          </ul>
         </article>
 
-        <article class="con-card email">
-        <i class="fa-regular fa-envelope"></i>
-        <p><a href="mailto:nirmalezhil21@gmail.com">nirmalezhil21@gmail.com</a></p>
+        <article class="catogery">
+          <h3>Programming & Tools</h3>
+          <ul>
+            <li>Python</li>
+            <li>MATLAB</li>
+            <li>C / C++</li>
+            <li>HTML / CSS / JS</li>
+            <li>Svelte 5, Git, Markdown</li>
+          </ul>
         </article>
-     </div>
 
-      <quote>
-        gy Ntbf;if kdpjiug; NghNy<br>ehd; tPo;Ntndd;W epidj;jhNah?
-     </quote>
-
-    </div>
-  </footer>
-
-  <script src="https://kit.fontawesome.com/f32f1dfc0f.js" crossorigin="anonymous"></script>
-  <script src="/JS/main.js"></script>
+        <article class="catogery">
+          <h3>Robotics & Control</h3>
+          <ul>
+            <li>SLAM & EKF</li>
+            <li>LiDAR & GPS Fusion</li>
+            <li>Sensor Modeling</li>
+            <li>Path Planning (A*, RRT)</li>
+            <li>Real-time Embedded Systems</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
   
+  <footer id="footer" class="contact">
+    <div class="widthcontainer">
+      <h2>CONTACT ME</h2>
+        <div class="wrapper">
+
+          <div>
+
+            <article class="con-card insta">
+              <i class="fa-brands fa-linkedin"></i>
+              <p><a target="_blank" href="https://www.linkedin.com/in/nirmal-a-j-l-a-98765a172/">nirmal-a-j-l-a</a></p>
+            </article>
+    
+            <article class="con-card x">
+            <i class="fa-regular fa-envelope"></i>
+            <p><a href="mailto:na497@cornell.edu">na497@cornell.edu</a></p>
+            </article>
+    
+            <article class="con-card email">
+            <i class="fa-regular fa-envelope"></i>
+            <p><a href="mailto:nirmalezhil21@gmail.com">nirmalezhil21@gmail.com</a></p>
+            </article>
+        </div>
+  
+      <quote>
+          gy Ntbf;if kdpjiug; NghNy<br>ehd; tPo;Ntndd;W epidj;jhNah?
+      </quote>
+
+    </div>
+
+      <p class="cpywrit">Nirmal Antonyselvaraj Jhon Leonard Arputha <br>
+        All copyright Reserved - 2025
+      </p>
+
+  </div>
+  </footer>
+       
+  <script async src="https://kit.fontawesome.com/f32f1dfc0f.js" crossorigin="anonymous"></script>
+  <script src="/New Site/JS/nav.js"></script>
 </body>
 </html>
