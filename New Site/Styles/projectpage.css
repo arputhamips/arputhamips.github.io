@@ -122,3 +122,53 @@
   min-width: 300px;
   align-self: flex-start;
 }
+.markdown-body .row > * {
+  flex: 1 1 45%;
+  min-width: 300px;
+  align-self: flex-start;
+}
+
+/* -------------------------------------------------
+   Additional styles for updated project pages
+   -------------------------------------------------*/
+
+/* Dark‑theme syntax highlighting (highlight.js) */
+.hljs {
+  background: #111;
+  color: #eee;
+  line-height: 1.6;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+/* Better looking tables that work in dark‑mode */
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.markdown-body th,
+.markdown-body td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+.markdown-body thead th {
+  background: #222;
+  color: var(--p_white);
+  font-weight: 600;
+}
+
+/* Tags (displayed under the date) */
+#project-tags {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--primary_accent);
+}
+
+#project-tags span {
+  margin-right: 0.5rem;
+}
