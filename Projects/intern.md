@@ -46,6 +46,7 @@ loading/unloading. The goal was to design an add‑on module that could:
        "fontSize": "20px",
      },
      "gantt": {
+       "barHeight": 16,
        "barGap": 8,
      }
   } }%%
